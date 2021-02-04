@@ -1,0 +1,628 @@
+[
+    {
+        "id": 1,
+        "name": "VALUE DESIGN",
+        "level": 1,
+        "icon": "Value_Design.svg",
+        "info": "Every business exists to create value for its customers and for itself. The value provided by a business can be summarised in its ‘value design.’ Having astrong, clearly defined value proposition, together with detailing out how this value proposition will be executed, is essential to attracting customers. In its simplest terms,  value design is a positioning approach that describes for whom you do what uniquely well. It describes your target buyer, the problem you solve, how you solve that problem, how you deliver the solution, and why you’re distinctly better than the alternatives.",
+        "children": [
+            {
+                "id": 2,
+                "name": "CUSTOMER PROBLEMS",
+                "level": 2,
+                "icon": "A. Value Design/Customer_Problems.svg",
+                "info": "If you want to sell something, be it cupcakes, computers or cars, you have to ask yourself one important question: What makes my product valuable to a customer? <br/> To figure this out, you first need to understand the jobs your potential customers need help with. A “job to be done” is any task a customer performs on a regular basis. There are two kinds: <br/> 1. Functional Jobs: are specific things customers need to get done, such as tending to the garden or buying groceries. <br/>2. Social Jobs: are the things customers want to do in order to impress others, such as buying a trendy dress or wowing their boss with an amazing presentation.",
+                "children": [
+                    {
+                        "id": 3,
+                        "name": "ACCESS TO INFORMATION",
+                        "level": "bc",
+                        "info": "",
+                        "icon": "A. Value Design/01. Customer Problems/ACCESS_TO_INFORMATION.svg"
+                    },
+                    {
+                        "id": 4,
+                        "name": "CAPTURING CUSTOMER PROFILE DETAILS",
+                        "level": "bc",
+                        "info": "",
+                        "icon": "A. Value Design/01. Customer Problems/CAPTURING_CUSTOMER_PROFILE_DETAILS.svg"
+                    },
+                    {
+                        "id": 5,
+                        "name": "DELAYED SALES FOLLOW-UP",
+                        "level": "bc",
+                        "info": "",
+                        "icon": "A. Value Design/01. Customer Problems/DELAYED_SALES_FOLLOW-UP.svg"
+                    },
+                    {
+                        "id": 6,
+                        "name": "EASE OF ENGAGEMENT",
+                        "level": "bc",
+                        "info": "",
+                        "icon": "A. Value Design/01. Customer Problems/EASE_OF_ENGAGEMENT.svg"
+                    },
+                    {
+                        "id": 7,
+                        "name": "ECO FRIENDLY PRODUCTS",
+                        "level": "bc",
+                        "info": "",
+                        "icon": "A. Value Design/01. Customer Problems/ECO_FRIENDLY_PRODUCTS.svg"
+                    },
+                    {
+                        "id": 8,
+                        "name": "KNOWLEDGE OF INTERACTION HISTORY",
+                        "level": "bc",
+                        "info": "",
+                        "icon": "A. Value Design/01. Customer Problems/KNOWLEDGE_OF_INTERACTION_HISTORY.svg"
+                    },
+                    {
+                        "id": 9,
+                        "name": "LACK OF CUSTOMER SERVICE",
+                        "level": "bc",
+                        "info": "",
+                        "icon": "A. Value Design/01. Customer Problems/LACK_OF_CUSTOMER_SERVICE.svg"
+                    },
+                    {
+                        "id": 10,
+                        "name": "LACK OF FLEXIBILITY",
+                        "level": "bc",
+                        "info": "",
+                        "icon": "A. Value Design/01. Customer Problems/LACK_OF_FLEXIBILITY.svg"
+                    },
+                    {
+                        "id": 11,
+                        "name": "LACK OF INTEREST",
+                        "level": "bc",
+                        "info": "",
+                        "icon": "A. Value Design/01. Customer Problems/LACK_OF_INTEREST.svg"
+                    },
+                    {
+                        "id": 12,
+                        "name": "LESSEN DIFFICULTY",
+                        "level": "bc",
+                        "info": "",
+                        "icon": "A. Value Design/01. Customer Problems/LESSEN_DIFFICULTY.svg"
+                    },
+                    {
+                        "id": 13,
+                        "name": "MANAGING EXPECTATIONS",
+                        "level": "bc",
+                        "info": "",
+                        "icon": "A. Value Design/01. Customer Problems/MANAGING_EXPECTATIONS.svg"
+                    },
+                    {
+                        "id": 14,
+                        "name": "PERSONALISATION",
+                        "level": "bc",
+                        "info": "",
+                        "icon": "A. Value Design/01. Customer Problems/PERSONALISATION.svg"
+                    },
+                    {
+                        "id": 15,
+                        "name": "POORLY TRAINED EMPLOYEES",
+                        "level": "bc",
+                        "info": "",
+                        "icon": "A. Value Design/01. Customer Problems/POORLY_TRAINED_EMPLOYEES.svg"
+                    },
+                    {
+                        "id": 16,
+                        "name": "REASONABLE PRICE",
+                        "level": "bc",
+                        "info": "",
+                        "icon": "A. Value Design/01. Customer Problems/REASONABLE_PRICE.svg"
+                    },
+                    {
+                        "id": 17,
+                        "name": "NEED MODULAR SOLUTIONS",
+                        "level": "bc",
+                        "info": "",
+                        "icon": "A. Value Design/01. Customer Problems/NEED_MODULAR_SOLUTIONS.svg"
+                    },
+                    {
+                        "id": 18,
+                        "name": "EASE OF USE",
+                        "level": "bc",
+                        "info": "",
+                        "icon": "A. Value Design/01. Customer Problems/EASE_OF_USE.svg"
+                    }
+                ]
+            },
+            {
+                "id": 19,
+                "name": "VALUE ELEMENTS - B2C",
+                "level": 2,
+                "icon": "A. Value Design/B2C_Value_Elements.svg",
+                "info": "Understanding the value you offer your customers is a cornerstone of successful marketing, and it's hard to pin down. There's a lot more that goes into the psychology of deciding to buy something than just weighing the price. <br/> Marketing strategists have noticed this and noticed that it's not always easy (but always super important) to assess how your customers are perceiving value. For the longest time, marketers have focused all their efforts only in analysing and managing the price side of the buying process as the only solution to boost profits. However, recent studies show that when a customer is evaluating a product to purchase, its perceived value plays one of the most important roles in this process. <br/> Understanding the true value of a product is extremely complicated due to its psychological and highly personal nature. Basically the amount of value in a particular product lies solely in the eye of the beholder. Yet research shows that there are functional and emotional elements that are associate with a product’s value. <br/> Although it’s hard to pin down value, when done correctly it can be a cornerstone of successful marketing. So it’s important to try to understand which elements form the core value of your product in order to improve it and stand out from the competition. <br/> Source: Adapted & modified from 'The Elements Of Value'. by, Eric Almquist, John Senior, & Nicolas Bloch, Bain & Co., Harvard Business Review, September 2016",
+                "children": [
+                    {
+                        "id": 20,
+                        "name": "BASIC  ELEMENTS",
+                        "level": 3,
+                        "info": "",
+                        "icon": "A. Value Design/02. B2C Value Elements/Basic_ELEMENTS.svg",
+                        "children": [
+                            {
+                                "id": 21,
+                                "name": "AVOIDS HASSLES",
+                                "level": "bc",
+                                "info": "Definition: Avoiding or reducing customer hassles",
+                                "icon": "A. Value Design/02. B2C Value Elements/01. BASIC ELEMENTS/Avoid_Hassles.svg"
+                            },
+                            {
+                                "id": 22,
+                                "name": "QUALITY",
+                                "level": "bc",
+                                "info": "Definition: Providing high-quality goods or services",
+                                "icon": "A. Value Design/02. B2C Value Elements/01. BASIC ELEMENTS/Quality.svg"
+                            },
+                            {
+                                "id": 23,
+                                "name": "REDUCES COST/SAVES MONEY",
+                                "level": "bc",
+                                "info": "Definition: Saving money in purchases, fees or subscriptions ",
+                                "icon": "A. Value Design/02. B2C Value Elements/01. BASIC ELEMENTS/Reduces_cost.svg"
+                            },
+                            {
+                                "id": 24,
+                                "name": "REDUCES EFFORT",
+                                "level": "bc",
+                                "info": "Definition: Helping customers to get things done with less effort",
+                                "icon": "A. Value Design/02. B2C Value Elements/01. BASIC ELEMENTS/Reduces_Effort.svg"
+                            },
+                            {
+                                "id": 25,
+                                "name": "REDUCES RISK",
+                                "level": "bc",
+                                "info": "Definition: Protecting from losses",
+                                "icon": "A. Value Design/02. B2C Value Elements/01. BASIC ELEMENTS/reduces_risk.svg"
+                            },
+                            {
+                                "id": 26,
+                                "name": "SAVES TIME",
+                                "level": "bc",
+                                "info": "Definition: Saving time in tasks or transactions",
+                                "icon": "A. Value Design/02. B2C Value Elements/01. BASIC ELEMENTS/saves_time.svg"
+                            },
+                            {
+                                "id": 27,
+                                "name": "VARIETY",
+                                "level": "bc",
+                                "info": "Definition: Providing a variety of things to choose from",
+                                "icon": "A. Value Design/02. B2C Value Elements/01. BASIC ELEMENTS/Variety.svg"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 28,
+                        "name": "SOFT ELEMENTS",
+                        "level": 3,
+                        "info": "",
+                        "icon": "A. Value Design/02. B2C Value Elements/Soft_ELEMENTS.svg",
+                        "children": [
+                            {
+                                "id": 29,
+                                "name": "REDUCES ANXIETY",
+                                "level": "bc",
+                                "info": "Definition: Helping people worry less and feel more secure",
+                                "icon": "A. Value Design/02. B2C Value Elements/02. SOFT ELEMENTS/REDUCES_ANXIETY.svg"
+                            },
+                            {
+                                "id": 30,
+                                "name": "ATTRACTIVENESS",
+                                "level": "bc",
+                                "info": "Definition: Helping people feel more attractive",
+                                "icon": "A. Value Design/02. B2C Value Elements/02. SOFT ELEMENTS/ATTRACTIVENESS.svg"
+                            },
+                            {
+                                "id": 31,
+                                "name": "DESIGN/AESTHETICS",
+                                "level": "bc",
+                                "info": "Definition: Providing an appealing form or design",
+                                "icon": "A. Value Design/02. B2C Value Elements/02. SOFT ELEMENTS/DESIGN___AESTHETICS.svg"
+                            },
+                            {
+                                "id": 32,
+                                "name": "FUN/ENTERTAINMENT",
+                                "level": "bc",
+                                "info": "Definition: Offering fun or entertainment",
+                                "icon": "A. Value Design/02. B2C Value Elements/02. SOFT ELEMENTS/FUN_ENTERTAINMENT.svg"
+                            },
+                            {
+                                "id": 33,
+                                "name": "REWARDS ME",
+                                "level": "bc",
+                                "info": "Definition: Providing benefits for being a loyal customer",
+                                "icon": "A. Value Design/02. B2C Value Elements/02. SOFT ELEMENTS/REWARDS_ME.svg"
+                            },
+                            {
+                                "id": 34,
+                                "name": "STATUS SYMBOL",
+                                "level": "bc",
+                                "info": "Definition: Representing achieved status or aspirations",
+                                "icon": "A. Value Design/02. B2C Value Elements/02. SOFT ELEMENTS/STATUS_SYMBOL.svg"
+                            },
+                            {
+                                "id": 35,
+                                "name": "THERAPEUTIC VALUE",
+                                "level": "bc",
+                                "info": "Definition: Providing therapeutic value or well-being",
+                                "icon": "A. Value Design/02. B2C Value Elements/02. SOFT ELEMENTS/THERAPEUTIC_VALUE.svg"
+                            },
+                            {
+                                "id": 36,
+                                "name": "TREND",
+                                "level": "bc",
+                                "info": "Definition: Rrepresents the current fashion or technology trend - is trendy with the times ",
+                                "icon": "A. Value Design/02. B2C Value Elements/02. SOFT ELEMENTS/IS_TRENDY.svg"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 37,
+                        "name": "LIFE ALTERING ELEMENTS",
+                        "level": 3,
+                        "info": "",
+                        "icon": "A. Value Design/02. B2C Value Elements/Life_Altering_ELEMENTS.svg",
+                        "children": [
+                            {
+                                "id": 38,
+                                "name": "PROVIDES HOPE",
+                                "level": "bc",
+                                "info": "Definition: Providing something to be optimistic about",
+                                "icon": "A. Value Design/02. B2C Value Elements/03. LIFE ALTERING ELEMENTS/provides_hope.svg"
+                            },
+                            {
+                                "id": 39,
+                                "name": "MOTIVATION",
+                                "level": "bc",
+                                "info": "Definition: Spurring people to achieve their goals",
+                                "icon": "A. Value Design/02. B2C Value Elements/03. LIFE ALTERING ELEMENTS/motivation.svg"
+                            },
+                            {
+                                "id": 40,
+                                "name": "HEIRLOOM",
+                                "level": "bc",
+                                "info": "Definition: A good investment for future generations",
+                                "icon": "A. Value Design/02. B2C Value Elements/03. LIFE ALTERING ELEMENTS/heirloom.svg"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 41,
+                        "name": "SOCIAL IMPACT ELEMENTS",
+                        "level": 3,
+                        "info": "",
+                        "icon": "A. Value Design/02. B2C Value Elements/Social_Impact_ELEMENTS.svg",
+                        "children": [
+                            {
+                                "id": 42,
+                                "name": "ENVIRONMENT FRIENDLY",
+                                "level": "bc",
+                                "info": "Definition: Helping other people or society more broadly",
+                                "icon": "A. Value Design/02. B2C Value Elements/04. SOCIAL IMPACT ELEMENTS/ENVIRONMENT_FRIENDLY.svg"
+                            },
+                            {
+                                "id": 43,
+                                "name": "POSITIVE COMMUNITY IMPACT",
+                                "level": "bc",
+                                "info": "Definition: Provides positive impact to a community at large. Promotes development in various ways",
+                                "icon": "A. Value Design/02. B2C Value Elements/04. SOCIAL IMPACT ELEMENTS/POSITIVE_COMMUNITY_IMPACT.svg"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 44,
+                "name": "VALUE CREATION MODELS",
+                "level": 2,
+                "icon": "A. Value Design/Value_Creation_Models.svg",
+                "info": "Value is the life blood of any organisation. The ultimate purpose of any organisation is to create lasting value for it's shareholders, customers, employees, and itself.  We have provided 13 categories of value creation model, detailed into a total of 55 unique tactics you can use to create value. <br/>The old mantras don’t work anymore. <br/> - Get market share and profit/value will follow<br/> - Get high volume growth and your profits will expand <br/> Growth & Value is important.  But, how can they be achieved? Ask yourself:  <br/> - What is most important to your customer? What are their key priorities <br/> - Where in those priorities can you make a profit and enhance value? <br/> - How will you create that value, and then gain market share in that space? <br/> Think deeply about the following things: <br/> - How is value generated in your company? Do you know how your competitors are creating value for themselves? <br/> - Do your people understand the value generation models you deploy? And is your entire organisation in sync to exploit it to the fullest? <br/> - Could you explore new models that can generate more value? <br/> - Do you know which initiatives improve your organisation's value, and which don't? Which initiative must be accelerated and which discontinued? <br/> - What specific actions can your organisation take in the short to medium term to enhance value? <br/> Ask yourself a set of more crucial and incisive questions. <br/> - Which customer segments will be most profitable? <br/> - How will their critical needs and jobs evolve into the foreseeable future? How is your organisation preparedness for this dynamic change in your customer needs? <br/> - Where will your customers allow you to create new value? <br/> - How can you reinvent your business model and design, and your solution value creation design to take advantage of new paths to growth and value generation?",
+                "children": [
+                    {
+                        "id": 45,
+                        "name": "STRENGTHEN",
+                        "level": 3,
+                        "info": "",
+                        "icon": "A. Value Design/03. Value Creation Models/Strengthen.svg",
+                        "children": [
+                            {
+                                "id": 46,
+                                "name": "ADD NEW ATTRIBUTES",
+                                "level": "bc",
+                                "info": "Definition: Customers might be seeking more from your solution to meet additional jobs or to do a particular job better or to solve a new problem. Strengthen your offering based on adding new attributes/benefits/experience to your product or service.",
+                                "icon": "A. Value Design/03. Value Creation Models/01. Strengthen/ADD_NEW_ATTRIBUTES.svg"
+                            },
+                            {
+                                "id": 47,
+                                "name": "ADD BASED ON PRICE DISCOVERY",
+                                "level": "bc",
+                                "info": "Definition: Customers might be willing to pay you more based on the various uses of your solution. Strengthen your offering based on price discovery - what is your customer willing to pay for your product or service.",
+                                "icon": "A. Value Design/03. Value Creation Models/01. Strengthen/ADD_BASED_ON_PRICE_DISCOVERY.svg"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 48,
+                        "name": "CUSTOMISE",
+                        "level": 3,
+                        "info": "",
+                        "icon": "A. Value Design/03. Value Creation Models/Customise.svg",
+                        "children": [
+                            {
+                                "id": 49,
+                                "name": "REDUCE EXPENSIVE, UNUSED FEATURES",
+                                "level": "bc",
+                                "info": "Definition: Sometimes certain products or services may contain additional features that are not required by most customers. In such cases, it is prudent to strip the solution of such superfluous features, and instead offer them as customisation. Ex: Spotify's in-app messaging; Costly physical storage (hard discs); Microsoft Edge browser instead of Internet Explorer.",
+                                "icon": "A. Value Design/03. Value Creation Models/03. Customise/REDUCE_EXPENSIVE_UNUSED_FEATURES.svg"
+                            },
+                            {
+                                "id": 50,
+                                "name": "REDUCE COMPLEXITY",
+                                "level": "bc",
+                                "info": "Definition: Product or service usage can get very complex sometimes. It is essential for you to break down usage barriers, and make the experience simple and seamless. The greater the simplicity, the higher are the chances of customer adoption. To simplify, aim to understand why more than what. Ex: iPod made smaller to fit into pocket - more storage - sync with Mac; ",
+                                "icon": "A. Value Design/03. Value Creation Models/03. Customise/REDUCE_COMPLEXITY.svg"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 51,
+                        "name": "CORELATED",
+                        "level": 3,
+                        "info": "",
+                        "icon": "A. Value Design/03. Value Creation Models/Corelated.svg",
+                        "children": [
+                            {
+                                "id": 52,
+                                "name": "PRODUCTS/SERVICES THAT ENHANCE CUSTOMER JOURNEY",
+                                "level": "bc",
+                                "info": "Definition: All customers require memorable experiences across all touch points. Craft experiences for your customers by adding co-related products or services to your solution or by enhancing shopping/buying experience. Ex: A play & learn area for kids when parents are shopping or dining. A free how-to workshop for B2B transactions.",
+                                "icon": "A. Value Design/03. Value Creation Models/05. Corelated/PRODUCTS_SERVICES_THAT_ENHANCE_CUSTOMER_JOURNEY.svg"
+                            },
+                            {
+                                "id": 53,
+                                "name": "COMPLEMENTARY PRODUCTS/SERVICES",
+                                "level": "bc",
+                                "info": "Definition: Offer complementary or related products/services together with your main solution offering - and enhance the usage and experience value of your main solution. Ex: Bundle Shampoo with Conditioner; Bundle Car with other accessories; Bundle Car with 2 free services; Buy furniture and get a home decorator service for free.",
+                                "icon": "A. Value Design/03. Value Creation Models/05. Corelated/COMPLEMENTARY_PRODUCTS_SERVICES.svg"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 54,
+                        "name": "CO-CREATION",
+                        "level": 3,
+                        "info": "",
+                        "icon": "A. Value Design/03. Value Creation Models/Co-create.svg",
+                        "children": [
+                            {
+                                "id": 55,
+                                "name": "CUSTOMERS PERSONALISE/DESIGN SOLUTIONS",
+                                "level": "bc",
+                                "info": "Definition: In many cases, customers prefer to be part of the solution creation process. This is true in both B2C and B2B environments. Involve customers in product design, service delivery, customisation, personalisation. Ex: Software development, Fashion design, Home architecture.",
+                                "icon": "A. Value Design/03. Value Creation Models/07. Co-create/CUSTOMERS_PERSONALISE_DESIGN_SOLUTIONS.svg"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 56,
+                        "name": "DIGITAL",
+                        "level": 3,
+                        "info": "",
+                        "icon": "A. Value Design/03. Value Creation Models/Digital.svg",
+                        "children": [
+                            {
+                                "id": 57,
+                                "name": "CREATE SERVICES FROM PRODUCT KNOWLEDGE",
+                                "level": "bc",
+                                "info": "Definition: Leverage your knowledge to create services that address various customer needs. Use digital technologies to render services to your clients. Ex: Virtual Storage, Cloud Computing, Using AR/VR technologies to provide training.",
+                                "icon": "A. Value Design/03. Value Creation Models/09. Digital/CREATE_SERVICES_FROM_PRODUCT_KNOWLEDGE.svg"
+                            },
+                            {
+                                "id": 58,
+                                "name": "DIGITISE FOR INCREASING TOUCHPOINTS",
+                                "level": "bc",
+                                "info": "Definition: Both B2C and B2B customers require access to you and your business. Physical access can only offer a limited # of touch points. Hence, use digital tech to increase your touch points with your customer. Ex: Mobile apps; Chat robots; Virtual stores.",
+                                "icon": "A. Value Design/03. Value Creation Models/09. Digital/DIGITISE_FOR_INCREASING_TOUCHPOINTS.svg"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 59,
+                        "name": "BUSINESS DESIGN",
+                        "level": 3,
+                        "info": "",
+                        "icon": "A. Value Design/03. Value Creation Models/Business_Design.svg",
+                        "children": [
+                            {
+                                "id": 60,
+                                "name": "REINVENT CUSTOMER FACING CHANNELS",
+                                "level": "bc",
+                                "info": "Definition: Channels can be direct - and it can be physical and digital. A smart distribution strategy can become a clear advantage. Redesign your channel strategy based on # of customer segments, product categories, markets served, after market service needs, amount of control needed, customer feedback, reach & experience. Ex: Levers; P&G. ",
+                                "icon": "A. Value Design/03. Value Creation Models/10. Business Design/REINVENT_CUSTOMER_FACING_CHANNELS.svg"
+                            },
+                            {
+                                "id": 61,
+                                "name": "REINVENT NEW VALUE CREATORS",
+                                "level": "bc",
+                                "info": "Definition: A value driven model is focussed on the creation and delivery of high customer value, where value is customised based on customer segments and target audiences. Value does not only mean price. Experience, Service, Personlisation, Design aesthetics etc are all components of Value. Ex: Hotels; Apple; Airlines class of travel.",
+                                "icon": "A. Value Design/03. Value Creation Models/10. Business Design/REINVENT_NEW_VALUE_CREATORS.svg"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 62,
+                        "name": "TARGET",
+                        "level": 3,
+                        "info": "",
+                        "icon": "A. Value Design/03. Value Creation Models/Target.svg",
+                        "children": [
+                            {
+                                "id": 63,
+                                "name": "TARGET LOW PROFITABLITY CUSTOMERS",
+                                "level": "bc",
+                                "info": "Definition: To deal with unprofitable customers, you must (1) Reassess the relationship; (2) Educate; (3) Renegotiate; (4) Innovate; (5) Migrate; and/or (6) Terminate. Understand the causes of low profitability. Without such an analysis, customer divestment must not be considered. Ex: Utilities disconnection on non-payment of bills; Continuously complaining customers.",
+                                "icon": "A. Value Design/03. Value Creation Models/12. Target/TARGET_LOW_PROFITABLITY_CUSTOMERS.svg"
+                            },
+                            {
+                                "id": 64,
+                                "name": "TARGET UNSATISFIED CUSTOMERS",
+                                "level": "bc",
+                                "info": "Definition: To deal with unsatisfied customers, you must (1) Enhance customer experience; (2) Significantly improve customer service; (3) Listen & meet your customer; (4) Delight them with surprise gifts; (5) Make them feel important; (6) Improve branding; (7) Increase social media presence and positive imaging. Ex: Zappos, Nordstrom, ",
+                                "icon": "A. Value Design/03. Value Creation Models/12. Target/TARGET_UNSATISFIED_CUSTOMERS.svg"
+                            },
+                            {
+                                "id": 65,
+                                "name": "TARGET CUSTOMER GROUPS",
+                                "level": "bc",
+                                "info": "Definition: Customer groups are formed over a common ideal - target these groups with the same ideals or principles. Become a friend and you will find it easier to sell & grow. Ex: AirBnB - their key innovation is trust and community building. They have 2 types of customers - hosts and guests (twice the problem). Yet they are the most valuable hospitality company in the world. ",
+                                "icon": "A. Value Design/03. Value Creation Models/12. Target/TARGET_CUSTOMER_GROUPS.svg"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 66,
+                "name": "VALUE DELIVERY MODELS",
+                "level": 2,
+                "icon": "A. Value Design/Value_Delivery_Models.svg",
+                "info": "Delivering value is an extraordinarily complex concept. How and why companies deliver value can vary significantly from one industry to another. How can you decipher executable patterns of the various delivery models? <br/> Some rules apply to all value delivery methods: <br/> - Customer selection – who are customers (and who are not) <br/> - Value capture – specifically which value delivery model will be applied <br/> - Strategic control points – which differentiate a products. <br/> - Scope – the range of business activities which will be performed <br/> Developing a value delivery design is not a one-time activity – it must be performed again and again if long-term success is to be achieved.  Why? Simply because delivery of value, in any market, is in a constant state of flux and transition – it moves as customer preferences & surrounding ecosystems move and change. <br/> We have provided 21 value delivery models you can choose from; together with the conditions that must pre-exist, things you must consider, and examples.",
+                "children": [
+                    {
+                        "id": 67,
+                        "name": "CUSTOMISED PRODUCT/SERVICE MODEL",
+                        "level": "bc",
+                        "info": "This is a model where a company invests time with a client to fully understand their needs and designs a custom solution to address their situation. <br/> RULES: <br/> - Invest to know the customer <br/> - Identify a need/problem <br/> - Develop a custom/specialised solutio <br/> - Build & develop customer relationship.<br/> POINTS TO NOTE: <br/> - This model may consume disproportionate time and money  <br/> - Revenue streams are protracted and take time <br/> - Large revenue streams are possible once solution is built and delivered <br/> EXAMPLES: <br/> - Heavy-duty equipments <br/> - Computer Hardware",
+                        "icon": "A. Value Design/04. Value Delivery Models/CUSTOMISED_PRODUCT_SERVICE_MODEL.svg"
+                    },
+                    {
+                        "id": 68,
+                        "name": "MANY FOR ALL MODEL",
+                        "level": "bc",
+                        "info": "This is a model where a company offers a range of products (almost always falling within the same product category) within the same market to appeal to all levels of consumers, from bargain to luxury, at different price points.  <br/> RULES: <br/> - A large segmented customer base <br/> - Product portfolio - Multiple product offerings at different price points  <br/> - Excellent product branding strategy in place <br/> - Lowest cost product acts as a buffer (safety net) - mass product; mass customer base - Lowest cost product is sold so efficiently that it creates a safety net for the company <br/> - Maximum profits from highest-end product segment <br/> POINTS TO NOTE: <br/> - This model works like a pyramid structure (widest base of pyramid is lowest cost product) <br/> - Potential customers span across different income levels <br/> EXAMPLES: <br/> - Industries: Hotels, Apparel & Accessories, Watches, Airlines etc <br/> - Companies: Swatch Group, Indian Hotels (Taj), Toyota etc.",
+                        "icon": "A. Value Design/04. Value Delivery Models/MANY_FOR_ALL_MODEL.svg"
+                    },
+                    {
+                        "id": 69,
+                        "name": "AGGREGATOR MODEL",
+                        "level": "bc",
+                        "info": "This model consists of a business offering multiple goods and services under one roof, thus creating a one stop shop for consumers. <br/> RULES: <br/>  - Offer a huge variety of products/services  <br/>  - Become a one-stop-shop for customers <br/>  - Create a near monopoly within the market <br/>  - Ensure that it controls a vast customer base, thereby compelling vendors to offer products/services on its platform.  <br/>  POINTS TO NOTE: <br/>  In order for this model to be successful, it is essential that: <br/> - The company controls a critical mass in the supply chain of the market <br/> - The industry/market must be fragmented, so that a streamlined option would be valuable to consumers.  <br/> - Profit is derived from the fact that it controls enough of the market <br/> - All agents/vendors are forced to do business with them, Giving the company a key advantage for negotiating price.   <br/>  EXAMPLES: <br/>  Mass <br/>  - Amazon <br/> - Walmart <br/>  High-end <br/> - Harrods <br/> - FarFetch",
+                        "icon": "A. Value Design/04. Value Delivery Models/AGGREGATOR_MODEL.svg"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 71,
+        "name": "OPPORTUNITY PATTERNS",
+        "level": 1,
+        "icon": "Opportunity_Patterns.svg",
+        "info": "How do entrepreneurs identify opportunities for their business ventures? They use cognitive frameworks they possess to “connect the dots” between changes in technology, demographics, markets, government policies, and other factors. The patterns they then perceive in these events or trends suggest ideas for new products or services - ideas that can potentially serve as the basis for new ventures.  <br/> This pattern  recognition perspective on opportunity identification helps integrate into one basic framework three key factors that have a solid bearing on opportunity recognition.  <br/> 1. First, engaging in an active search for opportunities; alertness to them; and prior knowledge of an industry or market. it also helps explain interrelations between these factors.  <br/> 2. Second, a pattern recognition perspective helps explain why some persons, but not others, identify specific opportunities. <br/> 3. Third, a pattern recognition framework suggests specific ways in which current or would-be entrepreneurs can be trained to be better at recognising opportunities. <br/> But what are those  patterns? How can you design opportunity? Create it? Execute on it? And make it stick? Put simply, how can you design where you must play and how you must play? <br/> Source: Adapted & modified from 'Better and Faster: The Proven Path to Unstoppable Ideas', by Jeremy Gutsche, 2015",
+        "children": [
+            {
+                "id": 72,
+                "name": "CONFLUENCE",
+                "level": 2,
+                "info": "Create an offering by combining multiple products, services, or trends. You can mix, do product integration, do social integration, or bringing people together, or add value through immersive experiences, and co-branding. <br/> - Starbuck coffee + cookies + free wireless - confluence of products and services that create immersive customer experience. <br/> - Nike Sportswear - Nike Sports-band and Nike+iPod - convergence of GPS navigation and athletic wear made it possible for people to track their cardio and workouts. <br/> The confluence pattern can be disruptive - it can spawn an entire industry by itself. Caution: Don't rush into it - examine your market, industry, competition, and your intrinsic capabilities and competencies. <br/> You must 'design' the offering - not just add or put together two or more things for the sake of achieving confluence.  Remember the following core principles <br/> 1. Chaos & adversity creates opportunity. Let it awaken the innovator in you. It is during times of distress that some of the best ideas convert into solid opportunities. <br/> 2. Align and work hand-in-hand with relevant business, technology, social and economic trends. This will help you multiply your odds of success. <br/> 3. Old becomes new. New becomes status-quo, status-quo becomes old, a new emerges. This cycle continues - you cannot wish this away.  It is likely that tomorrow has its foundations in yesterday! Lean into the past, and borrow from it - and create unique and memorable offerings. <br/> 4. Organisations tend to get embroiled in the daily rhythm, and sometimes moe forward with blinders on. This approach does not help you to examine opportunities that might exist in the periphery or edge of your vision. The fringe of your business. Seek your fringe, drive a set of people within your organisation to only examine and explore what can be innovated at the edge of your enterprise. You will see that what you don’t see can inspire amazing ideas that can lead to disruptive opportunities. <br/> 5. Sometimes opportunities lie in combining two or more completely disparate ideas to create a wholesome offering. The ability to look outside of your frame of reference, and explore potential ideas can lead to great ideas and opportunities, and lead you to create something that is unexpected, surprising and holds customer interest. ",
+                "icon": "B. Opportunity Patterns/01._Confluence.svg",
+                "children": [
+                    {
+                        "id": 73,
+                        "name": "ALIGN WITH TRENDS",
+                        "level": "bc",
+                        "info": "",
+                        "icon": "B. Opportunity Patterns/01. Confluence/ALIGN_WITH_TRENDS.svg"
+                    },
+                    {
+                        "id": 74,
+                        "name": "BLEND DIGITAL AND PHYSICAL (PHYGITAL)",
+                        "level": "bc",
+                        "info": "",
+                        "icon": "B. Opportunity Patterns/01. Confluence/BLEND DIGITAL AND PHYSICAL (PHYGITAL).png"
+                    },
+                    {
+                        "id": 75,
+                        "name": "CREATING SHARED INTERESTS - CROWD BASED",
+                        "level": "bc",
+                        "info": "",
+                        "icon": "B. Opportunity Patterns/01. Confluence/CREATING_SHARED_INTERESTS.svg"
+                    },
+                    {
+                        "id": 76,
+                        "name": "CO-BRANDING",
+                        "level": "bc",
+                        "info": "",
+                        "icon": "B. Opportunity Patterns/01. Confluence/CO-BRANDING.svg"
+                    },
+                    {
+                        "id": 77,
+                        "name": "COMBINE IDEAS TO CREATE NEW VALUE",
+                        "level": "bc",
+                        "info": "",
+                        "icon": "B. Opportunity Patterns/01. Confluence/COMBINE_IDEAS.svg"
+                    }
+                ]
+            },
+            {
+                "id": 78,
+                "name": "BREAKFREE",
+                "level": 2,
+                "info": "This pattern emerges when you craft products or services that breaks away from the main stream. Create an offering that is different from the beaten path, and create value and a new experience for customers from rebellion. <br/> We, as people, are tuned to focus more on what is different, rather than what is mainstream. Differentiation and surprise are two emotional hooks that can cause disruption. With the advent of social media, the shifts in cultural influences etc., the markets are a ready breeding ground for break free ideas. Individualism is more highly prized than uniformity. If employed effectively, this pattern can disrupt major industries/companies.  <br/> Break free ideas tend to create a niche, and self-market themselves. Certain customer groups are excited about differentiated products - the first movers. And this can propel the brand into turbo mode. Caution: The road to break free thinking is more often than not met with hesitation and fear - a feeling of jumping into the unknown. You will face a lot of resistance as well - since different thinking is not common place.  <br/> Ex: Diesel Jeans - A jean  is a jean is a jean. Yet, Diesel pivoted itself as a brand that diverges from mainstream by introducing jean concepts that were unheard of - miners jeans, torn jeans, fabric innovations etc., and Diesel took an entire industry by storm. Brands that have been present for decades like Levis and Lee could not bring themselves to innovate like Diesel. The result - Diesel jeans were priced almost 4 times that of competition if not more! They broke free from main stream by creating a cult, by leveraging the halo effect, creating exclusive Diesel club memberships, and ensuring that their brand was positioned as a fashion statement and not 'just another jean company'. Remember the following core principles: <br/> - If you intend to do something that is “popular”, then know that there is no surprise element. It’s already being done - which is why its popular. Deviating from popular is to do something different from mainstream. So do something unique, cool, and with pizzaz. That can be your next big thing! <br/> - Spend time to understand what’s the common/mainstream thinking in the marketplace. What is your competition doing? What are players in the “edge” of your market doing? Go against the grain. Rebel.  <br/> - Ex: The latest Old Spice marketing campaigns - different, rebellious and unforgettable. Red Bull ads. - Shockvertising - Danger marketing.  <br/> - You cannot b e all things to all people. Stop trying to service all your customer segments. You will never be remembered - as you will be only one in a crowd. Instead, discover the specific group of customers you want to cater to - and become totally and completely irresistible to them. Stoke deep emotion, create hooks that will drive brand loyalty in spades.  <br/> - Every product has certain weaknesses. And your competition will make sure to latch on to it and drive home the usefulness of their product as against yours. Rather than succumb to it, shift the focus. Make your weakness your strength and make it the focal point - craft messaging around it. Become different. Tell your consumers why your weakness doesn’t really matter.  <br/> - Ex: Red Bull - the taste of the drink is not very palatable - but yet, the company took that weakness and crafted campaigns around it - catapulting sales of Red Bull worldwide. Weakness is merely a perception - it is how you deal with it that counts. ",
+                "icon": "B. Opportunity Patterns/02._Breakfree.svg",
+                "children": [
+                    {
+                        "id": 79,
+                        "name": "DIVERGE - DIFFER FROM MAINSTREAM",
+                        "level": "bc",
+                        "info": "",
+                        "icon": "B. Opportunity Patterns/02. Breakfree/DIFFER_FROM_MAINSTREAM_-_COUNTER_CULTURE.svg"
+                    },
+                    {
+                        "id": 80,
+                        "name": "SPECIFIC PERSONALISATION VS CUSTOMISATION",
+                        "level": "bc",
+                        "info": "",
+                        "icon": "B. Opportunity Patterns/02. Breakfree/SPECIFIC_PERSONALISATION.svg"
+                    },
+                    {
+                        "id": 81,
+                        "name": "PRESTIGE - STOKE STATUS",
+                        "level": "bc",
+                        "info": "",
+                        "icon": "B. Opportunity Patterns/02. Breakfree/FLIRT_WITH_PRESTIGE_-_STOKE_STATUS.svg"
+                    },
+                    {
+                        "id": 82,
+                        "name": "CREATE PRODUCTS/ACCESSORIES THAT CREATES NEW TREND",
+                        "level": "bc",
+                        "info": "",
+                        "icon": "B. Opportunity Patterns/02. Breakfree/CREATE_A_NEW_TREND.svg"
+                    },
+                    {
+                        "id": 83,
+                        "name": "EXCLUSIVITY - CLUB MEMBERSHIP",
+                        "level": "bc",
+                        "info": "",
+                        "icon": "B. Opportunity Patterns/02. Breakfree/EXCLUSIVE_BELONGING_.svg"
+                    },
+                    {
+                        "id": 84,
+                        "name": "CREATE OFFERINGS THAT STOKE GENERATION R (REBELLION)",
+                        "level": "bc",
+                        "info": "",
+                        "icon": "B. Opportunity Patterns/02. Breakfree/REBELLION.svg"
+                    },
+                    {
+                        "id": 85,
+                        "name": "CREATE PRODUCTS THAT BECOME A FASHION STATEMENT",
+                        "level": "bc",
+                        "info": "",
+                        "icon": "B. Opportunity Patterns/02. Breakfree/FASHIONISATION.svg"
+                    }
+                ]
+            }
+        ]
+    }
+]

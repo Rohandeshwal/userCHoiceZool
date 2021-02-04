@@ -1,0 +1,39 @@
+<div class="h-100">
+    <div class="d-flex h-100">
+        <!-- <div>
+            <app-nav-bar></app-nav-bar>
+        </div> -->
+        <div class="w-100">
+            <div class="p-5">
+                <h3 class="page-heading pb-3 bottom-border">Case Study List</h3>
+                <div class="pt-5">
+                    <table class="table table-striped">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="row mx-0">
+                                        <div class="col">Case Study</div>
+                                        <div class="col">Module/SubModule Name</div>
+                                        <div class="col">Association</div>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr class="row-case" *ngFor=" let item of caseList | paginate: { itemsPerPage: 10, currentPage: p }, let i = index" (click)="openCaseStudy()">
+                                <td>
+                                    <div class="row mx-0">
+                                        <div class="col link-text" >{{item.name}}</div>
+                                        <div class="col">{{item.module}}</div>
+                                        <div class="col">{{item.association}}</div>
+                                    </div>
+                                </td>
+                                <td class="view-button"><button class="btn btn-sm btn-outline-secondary">Explore</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <pagination-controls (pageChange)="p = $event"></pagination-controls>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+@import "../../../../assets/styles/scss/variable.scss";
+
+.linkedin-btn {
+  background: $linkedinBtn;
+}
+.twitter-btn {
+  background: $twitterBtn;
+}
+
+.social-btn {
+  font-size: $tertiaryFontSize;
+  border-radius: 3px;
+
+  a{
+    color: $primaryWhite;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+.separation-line {
+  width: 120px;
+  height: 1px;
+  background: $primaryBlack;
+  margin: 0 8px;
+}
+
+.separation-text {
+  font-size: $tinyFontSize;
+}
+
+// .userInput {
+//   border-radius: 10px;
+//   height: 44px;
+//   box-shadow: $primaryBoxShadow;
+//   border: $inputBorder;
+// }
+.forgot-password{
+  font-size: 12px;
+  color: red;
+}

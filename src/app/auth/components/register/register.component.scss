@@ -1,0 +1,23 @@
+@import "../../../../assets/styles/scss/variable.scss";
+.content-wrapper {
+  width: 552px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 80px 0;
+  .login-wrapper {
+    margin-top: 66px;
+    .login-form {
+    }
+
+    .button-section {
+      margin-top: 50px;
+    }
+  }
+}
+
+// .userInput {
+//   border-radius: 10px;
+//   height: 44px;
+//   box-shadow: $primaryBoxShadow;
+//   border: $inputBorder;
+// }

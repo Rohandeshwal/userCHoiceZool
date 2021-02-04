@@ -1,0 +1,29 @@
+<div class="py-5 container">
+    <form>
+        <div class="d-flex form-group">
+            <div class="w-50 mx-3 ">
+                <input type="text" placeholder="LinkedIn URL" class="form-control">
+            </div>
+
+            <div class="w-50 mx-3">
+                <input type="text" placeholder="Twitter Handle" class="form-control">
+            </div>
+        </div>
+
+        <div class="d-flex form-group" *ngIf="userCategory === 'student' || userCategory === 'individual'">
+            <div class="w-50 mx-3">
+                <input type="text" placeholder="facebook URL" class="form-control">
+            </div>
+
+            <div class="w-50 mx-3">
+                <input type="text" placeholder="Instagram Handle" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group" *ngIf="userCategory !== 'student'">
+            <div class="w-50 mx-auto">
+                <input type="text" placeholder="Organization Website" class="form-control">
+            </div>
+        </div>
+    </form>
+</div>

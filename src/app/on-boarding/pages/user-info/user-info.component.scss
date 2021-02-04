@@ -1,0 +1,12 @@
+@import "../../../../assets/styles/scss/variable.scss";
+
+.user-info-wrapper {
+  text-align: center;
+  // padding: 55px 85px;
+  height: 100%;
+}
+
+.backgroundChange {
+  background: $backgroundBg !important;
+  border: $backgroundBorder;
+}

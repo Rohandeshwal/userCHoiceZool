@@ -1,0 +1,59 @@
+<div class="d-flex justify-content-between" [ngClass]="headerState ? 'container-fluid' : 'container'">
+   <div class="logo"><a [routerLink]="['/workspace/list']" routerLinkActive="router-link-active"> <img
+            src="./assets/images/choiceboard-logo.png"></a></div>
+   <div class="profile d-flex align-items-center">
+      <div class="mr-4 notification"><i class="fa fa-bell ft-22"></i></div>
+      <div class="mr-3">
+         <div class="user-name">Rafi Ali Khan</div>
+         <div class="user-tag">Student</div>
+      </div>
+      <div ngbDropdown>
+         <div class="profile-img">
+            <img src="./assets/images/rafi.jpg" id="dropdownConfig" ngbDropdownToggle>
+
+         </div>
+         <div class="profile-tool-bar" ngbDropdownMenu aria-labelledby="dropdownConfig">
+            <a class="tool-bar-item d-flex align-items-center marb-10 " href="javascript:void(0)" ngbDropdownItem
+               routerLink="/workspace/list">
+               <img src="./assets/images/icons-choiceboard/home.svg" style="filter: invert(0%);">
+               <span>Home</span>
+            </a>
+            <!-- <a class="tool-bar-item d-flex align-items-center marb-10" href="javascript:void(0)" ngbDropdownItem>
+            <img src="assets/images/icons-choiceboard/profile.svg" style="filter: invert(100%);">
+            <span>View Profile</span>
+         </a>
+         <a class="tool-bar-item d-flex align-items-center marb-10" href="javascript:void(0)" ngbDropdownItem>
+            <img src="assets/images/icons-choiceboard/edit.svg" style="filter: invert(100%);">
+            <span>Edit Workspace</span>
+         </a> -->
+            
+           
+            <!-- <a class="tool-bar-item d-flex align-items-center marb-10" href="javascript:void(0)" ngbDropdownItem>
+            <img src="assets/images/icons-choiceboard/share.svg" style="filter: invert(100%);">
+            <span>Share</span>
+         </a> -->
+         <a class="tool-bar-item d-flex align-items-center marb-10" href="javascript:void(0)" ngbDropdownItem routerLink="/core/settings">
+            <img src="./assets/images/user-profile.svg" style="filter: invert(100%);">
+            <span>Profile</span>
+         </a>
+            <a class="tool-bar-item d-flex align-items-center marb-10" href="javascript:void(0)" ngbDropdownItem routerLink="/core/settings">
+               <img src="./assets/images/icons-choiceboard/settings.svg" style="filter: invert(100%);">
+               <span>Settings</span>
+            </a>
+            <a class="tool-bar-item d-flex align-items-center marb-10" href="javascript:void(0)" ngbDropdownItem
+               routerLink="/">
+               <img src="./assets/images/icons-choiceboard/signout.svg" style="filter: invert(100%);">
+               <span>Sign Out</span>
+            </a>
+            <a class="tool-bar-item d-flex align-items-center marb-10" href="javascript:void(0)" ngbDropdownItem>
+               <img src="./assets/images/icons-choiceboard/upgrade.svg" style="filter: invert(100%);">
+               <span>Upgrade License</span>
+            </a>
+            <a class="tool-bar-item d-flex align-items-center marb-10" href="javascript:void(0)" ngbDropdownItem>
+               <img src="./assets/images/icons-choiceboard/preview.svg" style="filter: invert(100%);">
+               <span>View Activity</span>
+            </a>
+         </div>
+      </div>
+   </div>
+</div>

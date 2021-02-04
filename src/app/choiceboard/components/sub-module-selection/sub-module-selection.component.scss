@@ -1,0 +1,12 @@
+@import "../../../../assets/styles/scss/variable.scss";
+
+.sub-module-wrapper {
+  text-align: center;
+  padding: 55px 0;
+  height: 100%;
+
+  .sub-module-list {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+  }
+}

@@ -1,0 +1,41 @@
+<div class="user-info-wrapper pt-5">  <!--[class.backgroundChange]="slideIndex == 'slideTwo' || slideIndex == 'slideOne'"-->
+    <h2 class="page-heading">Which of these best describes you</h2>
+    <div>
+        <ngb-carousel #carousel >
+            <ng-template ngbSlide id="slideOne" class="">
+                <div class="picsum-img-wrapper">
+                    <app-config-category (userCategory)="checkUserCategory($event)"></app-config-category>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="button" (click)="routeToNext('slideOne')" class="btn btn-primary" [disabled]="!userCategory">Next</button>
+                </div>
+            </ng-template>
+            <ng-template ngbSlide id="slideTwo">
+                <div class="picsum-img-wrapper">
+                    <app-personal-config [userCategory]="userCategory"></app-personal-config>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="mx-2">
+                        <button type="button" (click)="routeToPrev()" class="btn btn-light">PREV</button>
+                    </div>
+                    <div class="mx-2">
+                        <button type="button" (click)="routeToNext('slideTwo')" class="btn btn-primary">Next</button>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template ngbSlide id="slideThree">
+                <div class="picsum-img-wrapper">
+                    <app-social-media-config [userCategory]="userCategory"></app-social-media-config>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="mx-2">
+                        <button type="button" (click)="routeToPrev()" class="btn btn-light">PREV</button>
+                    </div>
+                    <div class="mx-2">
+                        <button type="button" (click)="routeToNext('slideThree')" class="btn btn-primary">Next</button>
+                    </div>
+                </div>
+            </ng-template>
+        </ngb-carousel>
+    </div>
+</div>

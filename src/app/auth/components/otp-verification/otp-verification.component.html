@@ -1,0 +1,20 @@
+<div class="mt-5 d-flex align-items-center justify-content-center">
+    <div class="text-center">
+        <div>
+            <img src="{{appConfig.imgSrc.root}}/otp-image.svg">
+        </div>
+        <h3 class="page-heading mt-4">Verify your Email Address</h3>
+        <h6 class="text-muted">We’ve sent a verification OTP to your email ID, Please enter it below to continue</h6>
+        <div class="my-4">
+            <form>
+                <div class="form-group">
+                    <input type="number" placeholder="000000" class="form-control text-center w-50 mx-auto">
+                </div>
+                <div class="form-group mt-2">
+                    <button type="button" class="btn btn-primary" [routerLink]="['/on-board/user-info']">CONTINUE</button>
+                </div>
+            </form>
+        </div>
+        <div class="resend-otp-link">Did not receive OTP email yet? <a href="javascript:void(0)">Resend Email</a></div>
+    </div>
+</div>

@@ -1,0 +1,259 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "assets/styles/scss/variable.scss";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "assets/styles/scss/common.scss";
+@import '~angular-tree-component/dist/angular-tree-component.css';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: $primaryBiege !important;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+input,
+select,
+button,
+textarea {
+  &:active,
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.btn-primary {
+  color: $primaryWhite !important;
+  border-radius: 3px;
+}
+
+.btn-light{
+  border-radius: 3px;
+}
+
+.ft-22{
+  font-size: 22px;
+}
+.ft-20{
+  font-size: 20px;
+}
+.ft-18{
+  font-size: 18px;
+}
+.ft-16{
+  font-size: 16px;
+}
+.ft-14{
+  font-size: 14px;
+}
+
+
+// Font Weight
+
+.fw-600{
+  font-weight: 600;
+}
+
+.fw-bold{
+  font-weight: bold;
+}
+
+
+
+// Width
+
+.w-33 {
+  width: 33.33%;
+}
+
+// ngx-carousel
+
+.ngxcarousel-items {
+  width: 100% !important;
+}
+
+.banner > .ngxcarousel > .ngxcarousel-inner > .ngxcarousel-items > .item {
+  display: inline-grid !important;
+  justify-content: space-around !important;
+}
+
+// Sub Module Component Modal
+
+.modal {
+  .modal-dialog {
+    width: 650px !important;
+    max-width: 650px !important;
+    margin: 4.75rem auto !important;
+    background: $primaryBiege;
+
+    .modal-content {
+      background: $primaryBiege !important;
+      .modal-header {
+        font-weight: bold;
+        border-bottom: none !important;
+        .card-content {
+          position: absolute;
+          top: -55px;
+          left: 275px;
+        }
+      }
+
+      .modal-body {
+        padding: 2rem 3rem;
+      }
+    }
+  }
+}
+
+// Scroll Bar CSS
+
+::-webkit-scrollbar-track {
+  background-color: #ccc;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 4px;
+  border-radius: 3.5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+// History Accordian Css
+
+.history-accordian {
+  .accordion {
+    .card {
+      border: none;
+      background: transparent;
+
+      .card-header {
+        border-radius: 0 0 10px 10px;
+        background-color: $primaryMidnightBlue !important;
+        border-bottom: none;
+        margin-bottom: 0 !important;
+        box-shadow: $secondaryBoxShadow;
+
+        .btn {
+          color: $primaryWhite !important;
+        }
+      }
+
+      .collapse {
+        .card-body {
+          padding: 0 1.25rem;
+        }
+      }
+    }
+  }
+}
+
+// History Sub Module Accordian CSS
+
+.history-accordian {
+  .sub-module-accordian {
+    .accordion {
+      .card {
+        background: $primaryWhite;
+        .card-header {
+          background-color: #fafafa !important;
+          .btn {
+            color: $primaryBlack !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// app-choiceboard-preview{
+//   .business-comp-list{  
+//   .accordion{
+//     .card{
+//       .card-header{
+//         .btn{
+//           padding-left: 30px;
+//         }
+//       }
+  
+//       .collapse{
+//         .card-body{
+//           .arrow-icon{
+//             position: absolute;
+//             top: 8px;
+//             left: 5px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// }
+.carousel {
+  outline: none !important;
+}
+
+.dark-modal {
+  .modal-body {
+    padding: 13px 15px !important;
+  }
+}
+.create-new{
+  
+  &:hover{
+    border: $cardBorder;
+    background: $primaryOrange !important;
+    color: $primaryWhite;
+  }
+
+  i {
+    font-size:36px;
+  }
+}
+
+.btn {
+  font-size: 0.8rem !important;
+}
+
+.ngx-pagination{
+  text-align: center !important;
+  margin-bottom: 0 !important;
+  margin-top: 1rem !important;
+  padding-left: 0 !important;
+  .current{
+   background: $primaryCardColor !important;
+  }
+  a{
+    text-decoration: none !important;
+  }
+}
+
+// Business Component accordian in Choiceboard preview component
+
+.business-comp-list{
+  .accordion{
+    .card{
+      border-radius: unset !important;
+      .card-header{
+        padding: 0.25rem !important;
+        text-align: left !important;
+        background: #eee !important;
+        cursor: pointer;
+        .btn{
+          text-decoration: unset !important;
+          color: $primaryBlack !important;
+        }
+      }
+
+    }
+  }
+}
+

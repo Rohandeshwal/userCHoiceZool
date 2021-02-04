@@ -1,0 +1,134 @@
+<div class="h-100" style="overflow: scroll;">
+  <!-- <div class="d-flex h-100"> -->
+    <!-- <div>
+      <app-nav-bar></app-nav-bar>
+    </div> -->
+    <!-- <div class="w-100"> -->
+      <div>
+        <button class="btn btn-primary btn-sm mx-3 mt-3" (click)="RouteTo()">BACK</button>
+      </div>
+      <div class="history-wrapper w-100 p-3">
+        <div class="d-flex align-items-center justify-content-between pb-4">
+          <h3 class="page-heading mb-0">View Progress</h3>
+          <div class="mr-3 filter d-flex align-items-center">
+            <input type="text" class="form-control" placeholder="Search here">
+            <img src="./assets/images/icons-choiceboard/search.svg">
+          </div>
+        </div>
+
+        <div class="history-accordian mr-3">
+          <ngb-accordion #acc="ngbAccordion" activeIds="config-panel-one">
+            <ngb-panel title="Value Design" id="config-panel-one">
+              <ng-template ngbPanelContent>
+                <div class="sub-module-accordian">
+                  <ngb-accordion #acc="ngbAccordion" activeIds="config-panel-two">
+                    <ngb-panel title="Value Proposition" id="config-panel-two">
+                      <ng-template ngbPanelContent>
+                        <div class="pt-3 pb-3 comments-section">
+                          <div class="pb-3">
+                            <div class="d-flex  align-items-center justify-content-between cb-comments">
+                              <div class="list-style">
+                                <div class="line"></div>
+                                <div class="dot"></div>
+                              </div>
+                              <div class="w-75" class="question">STATE YOUR VALUE
+                                PROPOSITION IN 300 WORDS</div>
+                              <div class="d-flex w-25 justify-content-between align-items-center">
+                                <div class="update-time">2 hours ago</div>
+                                <div><a href="javascript:void(0)" class="edit-content"
+                                    [routerLink]="['/choiceboard/preview']">Edit</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="comments-desc py-4">simply dummy text of the
+                              printing and typesetting industry. Lorem
+                              Ipsum has been the industry’s standard dummy</div>
+                            <div class="ml-5 pl-3 description">
+                              simply dummy text of the printing and typesetting industry. simply
+                              dummy text of the printing and typesetting industry. Lorem Ipsum has
+                              been the industry’s standard dummy Lorem Ipsum has been the
+                              industry’s standard dummys
+                            </div>
+                          </div>
+                          <div>
+                            <div class="d-flex  align-items-center justify-content-between cb-comments">
+                              <div class="list-style">
+                                <div class="line"></div>
+                                <div class="dot"></div>
+                              </div>
+                              <div class="question w-75">Which Customer
+                                problems/needs you solving?</div>
+                              <div class="d-flex w-25 justify-content-between align-items-center">
+                                <div class="update-time">2 hours ago</div>
+                                <div><a href="javascript:void(0)" class="edit-content"
+                                    [routerLink]="['/choiceboard/preview']">Edit</a>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="comments-desc py-4">simply dummy text of the
+                              printing and typesetting industry. Lorem
+                              Ipsum has been the industry’s standard dummy</div>
+                            <div class="pt-3 pb-3 ml-5 comments-section">
+                              <div class="d-flex justify-content-between cb-comments">
+                                <div class="list-style" style="top: 25px;">
+                                  <div class="line"></div>
+                                  <div class="dot"></div>
+                                </div>
+                                <div class="d-flex" style="width: 70%;">
+                                  <div class="card-layout-small d-flex justify-content-center align-items-center ml-5">
+                                    <img src="assets/images/category-individual.svg">
+                                  </div>
+                                  <div class="p-3">
+                                    <div class="question pl-0">Business Constituents</div>
+                                    <div class="d-flex notes-list pt-4">
+                                      <div class="pr-2"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                      <div>
+                                        Lorem ipsum dolar sit amen, Lorem ipsum dolar sit amen, Lorem ipsum dolar sit
+                                        amen.
+                                      </div>
+                                    </div>
+
+                                    <div class="d-flex notes-list py-2">
+                                      <div class="pr-2"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                      <div>
+                                        Lorem ipsum dolar sit amen, Lorem ipsum dolar sit amen, Lorem ipsum dolar sit
+                                        amen.
+                                      </div>
+                                    </div>
+
+                                    <div class="d-flex notes-list py-2">
+                                      <div class="pr-2"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                      <div>
+                                        Lorem ipsum dolar sit amen, Lorem ipsum dolar sit amen, Lorem ipsum dolar sit
+                                        amen.
+                                      </div>
+                                    </div>
+
+                                    <div class="d-flex notes-list py-2">
+                                      <div class="pr-2"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                      <div>
+                                        Lorem ipsum dolar sit amen, Lorem ipsum dolar sit amen, Lorem ipsum dolar sit
+                                        amen.
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="update-time py-3">2 hours ago</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </ng-template>
+                    </ngb-panel>
+                  </ngb-accordion>
+                </div>
+              </ng-template>
+            </ngb-panel>
+          </ngb-accordion>
+        </div>
+      </div>
+    <!-- </div> -->
+
+  <!-- </div> -->
+</div>

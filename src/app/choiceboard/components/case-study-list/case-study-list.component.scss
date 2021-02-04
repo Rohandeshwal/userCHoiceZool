@@ -1,0 +1,11 @@
+@import "../../../../assets/styles/scss/variable.scss";
+.table th, .table td{
+    border-top: none !important;
+}
+.link-text{
+    cursor: pointer;
+}
+
+.row-case:hover{
+     background: $primaryWhite;
+}

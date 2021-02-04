@@ -1,0 +1,467 @@
+<div class="h-100" style="overflow: auto;">
+    <div class="d-flex container">
+        <!-- <div class="text-center py-5">
+            <div>
+                <button><a routerLink="./workspace/list
+                    "><img src="./assets/images/icons-choiceboard/back-arrow.svg">Back To Workspaces</a></button>
+            </div>
+            <h3 class="page-heading">WS - Parle Exotics - My Choiceboards</h3>
+        </div>
+        <div class="row justify-content-between mx-auto">
+            <div class="workspace-card d-flex justify-content-center align-items-center create-new"
+                (click)="goToPreview()">
+                <i class="fa fa-plus"></i>
+                <div class="pt-3 create-new">Create New Choiceboard</div>
+            </div>
+            <div class="workspace-content" *ngFor="let workspace of workspaces, let i = index">
+                <div class="workspace-card">
+                    <span class="menu-icon" (click)="openMenu(i)"><i class="fa fa-ellipsis-v"
+                            [ngClass]="{'white-icon': this.showMenuBar && workspaceIndex == i} "
+                            aria-hidden="true"></i></span>
+                    <div class="d-flex justify-content-center align-items-center workspace-name" (click)="routeTo(i)">
+                        {{workspace.workspaceName}}
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center share-count">Shared with 4 people
+                        <img src="./assets/images/icons-choiceboard/shared-user.svg">
+                    </div>
+    
+                    <div class="workspace-menu" *ngIf="showMenuBar && workspaceIndex == i">
+                        <ul class="menu-list">
+                            <li class="menu-list-item">
+                                <img src="./assets/images/icons-choiceboard/open.svg">
+                                Open</li>
+                            <li class="menu-list-item">
+                                <img src="./assets/images/icons-choiceboard/preview.svg">
+                                Preview</li>
+                            <li class="menu-list-item">
+                                <img src="./assets/images/icons-choiceboard/rename.svg">
+                                Rename</li>
+                            <li class="menu-list-item">
+                                <img src="./assets/images/icons-choiceboard/share.svg">
+                                Share</li>
+                            <li class="menu-list-item">
+                                <img src="./assets/images/icons-choiceboard/copy-plus.svg">
+                                Copy</li>
+                            <li class="menu-list-item">
+                                <img src="./assets/images/icons-choiceboard/delete.svg">
+                                Delete</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="side-bar py-5 pr-3">
+            <div class="d-flex align-items-center truncate p-2 my-1" (click)="routeTo('workspace', '')">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                <div class="mx-3">Back to Workspace</div>
+            </div>
+            <div>
+                <div class="d-flex align-items-center truncate p-2 my-1" (click)="highlight('myCBs')">
+                    <i class="fa fa-clipboard" aria-hidden="true"></i>
+                    <div class="mx-3">My ChoiceBoards</div>
+                </div>
+                <div class="d-flex align-items-center truncate p-2 my-1" (click)="highlight('sharedByMe')">
+                    <i class="fa fa-share-square-o" aria-hidden="true"></i>
+                    <div class="mx-3">ChoiceBoards shared by me</div>
+                </div>
+                <div class="d-flex align-items-center truncate p-2 my-1" (click)="highlight('sharedCBs')">
+                    <i class="fa fa-share-square-o" aria-hidden="true"></i>
+                    <div class="mx-3">ChoiceBoards shared with me</div>
+                </div>
+                <div class="d-flex align-items-center truncate p-2 my-1" (click)="highlight('Case-Quiz')">
+                    <i class="fa fa-share-square-o" aria-hidden="true"></i>
+                    <div class="mx-3">My Case Studies & Quizes</div>
+                </div>
+                <div class="d-flex align-items-center truncate p-2 my-1" (click)="highlight('recommended')">
+                    <i class="fa fa-share-square-o" aria-hidden="true"></i>
+                    <div class="mx-3">Recommended Case Studies & Quizes</div>
+                </div>
+                <div class="d-flex align-items-center truncate p-2 my-1" (click)="routeTo('create', '')">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                    <div class="mx-3">Create a new ChoiceBoards</div>
+                </div>
+            </div>
+            <div class="mt-4">
+                <h6 class="page-heading">Learning And Resources</h6>
+                <div>
+                    <div class="d-flex align-items-center truncate p-2 my-1">
+                        <i class="fa fa-th" aria-hidden="true"></i>
+                        <div class="mx-3">How to guide</div>
+                    </div>
+                    <div class="d-flex align-items-center truncate p-2 my-1">
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                        <div class="mx-3">Video tutorials</div>
+                    </div>
+                    <div class="d-flex align-items-center truncate p-2 my-1">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>
+                        <div class="mx-3">Help center</div>
+                    </div>
+                    <div class="d-flex align-items-center truncate p-2 my-1">
+                        <i class="fa fa-gift" aria-hidden="true"></i>
+                        <div class="mx-3">What's new</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cb-container pt-5 w-100">
+            <h4 class="page-heading mb-3">{{workSpaceName}} Workspace</h4>
+            <div class="choiceboards p-4" id="my-CBs" [ngClass]="highlighterID1  ? 'highlighted' : ''">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <i class="fa fa-clipboard shared-cb-icon" aria-hidden="true"></i>
+                        <h6 class="page-heading mb-0 mx-2">My ChoiceBoards</h6>
+                    </div>
+                    <div class="d-flex">
+                        <div class="filter mr-3">
+                            <input type="text" placeholder="Find..." class="form-control">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <div (click)="routeTo('create', '')" placement="top" ngbTooltip="Add Choiceboard">
+                            <button class="btn add-button">
+                                <img src="./assets/images/icons-choiceboard/plus.svg">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-0 justify-content-center">
+                    <label class="card-checkbox mx-3"
+                        *ngFor="let choiceBoard of choiceBoards  | paginate: {id:'pagination1', itemsPerPage: 4, currentPage: p1 }">
+                        <input type="radio" value="" name="category" class="d-none">
+                        <div class="card-content" ngbDropdown>
+                            <div class="card-layout d-flex justify-content-center mt-4">
+                                <i class="fa fa-clipboard" aria-hidden="true"
+                                    (click)="routeTo('preview', choiceBoard.name)"></i>
+                                <div class="px-2 shared-count">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    <span class="ml-1">{{choiceBoard.shared_count}}</span>
+                                    <div class="shared-list">
+                                        <div>Rafi ali khan</div>
+                                        <div>Shubham Bhavsar</div>
+                                        <div>Rohan Deshwal</div>
+                                        <div>Premjit Singh</div>
+                                        <div>Surajit Ray</div>
+                                    </div>
+                                </div>
+                                <!-- <span id="dropdownConfig" ngbDropdownToggle class="cb-dropdown"></span> -->
+                                <span class="cb-dropdown" id="dropdownConfig" ngbDropdownToggle><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <div class="card-name mt-3">{{choiceBoard.name}}</div>
+                            <!-- <div ngbDropdown> -->
+                                <div ngbDropdownMenu aria-labelledby="dropdownConfig">
+                                    <button ngbDropdownItem>Clone</button>
+                                    <button ngbDropdownItem>Comments</button>
+                                    <button ngbDropdownItem (click)="openChoiceboardDeleteModal(content)">Delete</button>
+                                    <button ngbDropdownItem>Edit</button>
+                                    <button ngbDropdownItem>History</button>
+                                    <button ngbDropdownItem>Preview</button>
+                                    <button ngbDropdownItem (click)="publishChoiceBoard()">Publish</button>
+                                    <button ngbDropdownItem (click)="shareChoiceBoard()">Share</button>
+                                </div>
+                            <!-- </div> -->
+                        </div>
+                    </label>
+                </div>
+                <pagination-controls id="pagination1" (pageChange)="p1 = $event"></pagination-controls>
+            </div>
+            <div class="choiceboards mt-5 p-4" id="sharedByMe" [ngClass]="highlighterID2  ? 'highlighted' : ''">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <i class="fa fa-clipboard shared-cb-icon" aria-hidden="true"></i>
+                        <h6 class="page-heading mb-0 mx-2">ChoiceBoards shared by me</h6>
+                    </div>
+                    <div class="filter">
+                        <input type="text" placeholder="Find..." class="form-control">
+                        <i class="fa fa-search"></i>
+                    </div>
+                </div>
+                <div class="row mx-0 justify-content-center">
+                    <label class="card-checkbox mx-3"
+                        *ngFor="let choiceBoard of choiceBoards  | paginate: {id:'pagination2', itemsPerPage: 4, currentPage: p2 }">
+                        <input type="radio" value="" name="category" class="d-none">
+                        <div class="card-content" ngbDropdown>
+                            <div class="card-layout d-flex justify-content-center mt-4">
+                                <i class="fa fa-clipboard" aria-hidden="true"
+                                    (click)="routeTo('preview', choiceBoard.name)"></i>
+                                <div class="px-2 shared-count">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    <span class="ml-1">{{choiceBoard.shared_count}}</span>
+                                    <div class="shared-list">
+                                        <div>Rafi ali khan</div>
+                                        <div>Shubham Bhavsar</div>
+                                        <div>Rohan Deshwal</div>
+                                        <div>Premjit Singh</div>
+                                        <div>Surajit Ray</div>
+                                    </div>
+                                </div>
+                                <span class="cb-dropdown" id="dropdownConfig" ngbDropdownToggle><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <div ngbDropdownMenu aria-labelledby="dropdownConfig">
+                                <button ngbDropdownItem>Clone</button>
+                                <button ngbDropdownItem>Comments</button>
+                                <button ngbDropdownItem (click)="openChoiceboardDeleteModal(content)">Delete</button>
+                                <button ngbDropdownItem>Edit</button>
+                                <button ngbDropdownItem>History</button>
+                                <button ngbDropdownItem>Preview</button>
+                                <button ngbDropdownItem (click)="publishChoiceBoard()">Publish</button>
+                                <button ngbDropdownItem (click)="shareChoiceBoard()">Share</button>
+                            </div>
+
+                            <div class="card-name mt-3">{{choiceBoard.name}}</div>
+                        </div>
+                    </label>
+                </div>
+                <pagination-controls id="pagination2" (pageChange)="p2 = $event"></pagination-controls>
+            </div>
+            <div class="mt-5 p-4 choiceboards" id="sharedCBs" [ngClass]="highlighterID3  ? 'highlighted' : ''">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <i class="fa fa-share-square-o shared-cb-icon" aria-hidden="true"></i>
+                        <h6 class="page-heading mx-2 mb-0">ChoiceBoards shared with me</h6>
+                    </div>
+                    <div class="filter">
+                        <input type="text" placeholder="Find..." class="form-control">
+                        <i class="fa fa-search"></i>
+                    </div>
+                </div>
+                <div class="row mx-0 justify-content-center">
+                    <label class="card-checkbox mx-3"
+                        *ngFor="let choiceBoard of sharedChoiceBoards  | paginate: {id: 'pagination3', itemsPerPage: 4, currentPage: p3 }">
+                        <input type="radio" value="" name="category" class="d-none">
+                        <div class="card-content" ngbDropdown>
+                            <div class="card-layout d-flex justify-content-center mt-4">
+                                <i class="fa fa-clipboard" aria-hidden="true"
+                                    (click)="routeTo('preview', choiceBoard.name)"></i>
+                                <div class="px-2 shared-count">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    <span class="ml-1">{{choiceBoard.shared_count}}</span>
+                                    <div class="shared-list">
+                                        <div>Rafi ali khan</div>
+                                        <div>Premjit Singh</div>
+                                        <div>Surajit Ray</div>
+                                    </div>
+                                </div>
+                                <!-- <span class="info-icon">
+                                        <img src="./assets/images/icons-choiceboard/play.svg">
+                                        <img src="./assets/images/icons-choiceboard/attachment.svg">
+                                        <img src="./assets/images/icons-choiceboard/info-icon.svg"
+                                            (click)="openModal(infoModal, $event)">
+                                    </span> -->
+                                    <span class="cb-dropdown" id="dropdownConfig" ngbDropdownToggle><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </span>
+                            </div>
+                            <div ngbDropdownMenu aria-labelledby="dropdownConfig">
+                                <button ngbDropdownItem>Clone</button>
+                                <button ngbDropdownItem>Comments</button>
+                                <button ngbDropdownItem (click)="openChoiceboardDeleteModal(content)">Delete</button>
+                                <button ngbDropdownItem>Edit</button>
+                                <button ngbDropdownItem>History</button>
+                                <button ngbDropdownItem>Preview</button>
+                                <button ngbDropdownItem (click)="publishChoiceBoard()">Publish</button>
+                                <button ngbDropdownItem (click)="shareChoiceBoard()">Share</button>
+                            </div>
+                            <div class="card-name mt-3">{{choiceBoard.name}}</div>
+                        </div>
+                    </label>
+                </div>
+                <pagination-controls id="pagination3" (pageChange)="p3 = $event"></pagination-controls>
+            </div>
+
+            <div class="mt-5 p-4 choiceboards" id="Case-Quiz" [ngClass]="highlighterID4  ? 'highlighted' : ''">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <i class="fa fa-file shared-cb-icon" aria-hidden="true"></i>
+                        <h6 class="page-heading mx-2 mb-0">My Case Studies & Quizes</h6>
+                    </div>
+                    <div class="filter">
+                        <input type="text" placeholder="Find..." class="form-control">
+                        <i class="fa fa-search"></i>
+                    </div>
+                </div>
+                <div class="my-3 border-box p-3">
+                    <div class="d-flex justify-content-between">
+                        <div class="page-heading">My Cases</div>
+                        <div><button type="button" class="btn btn-sm btn-primary">Link to Choiceboards</button></div>
+                    </div>
+                    <div class="row mx-0 justify-content-center">
+                        <label class="card-checkbox mx-3"
+                            *ngFor="let choiceBoard of choiceBoards | paginate: {id: 'pagination4', itemsPerPage: 4, currentPage: p4 }, let ind = index"
+                            (click)="routeTo('case-study', choiceBoard.name)">
+                            <input type="radio" value="" name="category" class="d-none">
+                            <div class="card-content">
+                                <div class="card-layout d-flex justify-content-center mt-4">
+                                    <div class="quiz-type" *ngIf="ind === 0 || ind === 3" placement="top" ngbTooltip="Case study level - creating"><img
+                                            src="./assets/images/icons-choiceboard/creating-icon.svg"></div>
+                                    <div class="quiz-type" *ngIf="ind === 2 || ind === 5" placement="top" ngbTooltip="Case study level - doing"><img
+                                            src="./assets/images/icons-choiceboard/doing-icon.svg"></div>
+                                    <div class="quiz-type" *ngIf="ind === 1 || ind === 4" placement="top" ngbTooltip="Case study level - knowing"><img
+                                            src="./assets/images/icons-choiceboard/knowing-icon.svg"></div>
+                                    <i class="fa fa-file" aria-hidden="true"></i>
+                                </div>
+                                <div class="card-name mt-3">{{choiceBoard.name}}</div>
+                            </div>
+                        </label>
+                    </div>
+                    <pagination-controls id="pagination4" (pageChange)="p4 = $event"></pagination-controls>
+                </div>
+                <div class="border-box p-3">
+                    <div class="d-flex justify-content-between">
+                        <div class="page-heading">My Quizes</div>
+                        <div><button type="button" class="btn btn-sm btn-primary">Link to Choiceboards</button></div>
+                    </div>
+                    <div class="row mx-0 justify-content-center">
+                        <label class="card-checkbox mx-3"
+                            *ngFor="let choiceBoard of choiceBoards | paginate: {id: 'pagination5', itemsPerPage: 4, currentPage: p5 }, let ind = index"
+                            (click)="routeTo('quiz', choiceBoard.name)">
+                            <input type="radio" value="" name="category" class="d-none">
+                            <div class="card-content">
+                                <div class="card-layout d-flex justify-content-center mt-4 align-items-center">
+                                    <div class="quiz-type" *ngIf="ind === 0 || ind === 3" placement="top" ngbTooltip="Case study level - creating"><img
+                                            src="./assets/images/icons-choiceboard/creating-icon.svg"></div>
+                                    <div class="quiz-type" *ngIf="ind === 2 || ind === 5" placement="top" ngbTooltip="Case study level - doing"><img
+                                            src="./assets/images/icons-choiceboard/doing-icon.svg"></div>
+                                    <div class="quiz-type" *ngIf="ind === 1 || ind === 4" placement="top" ngbTooltip="Case study level - knowing"><img
+                                            src="./assets/images/icons-choiceboard/knowing-icon.svg"></div>
+                                    <img src="./assets/images/icons-choiceboard/quiz_new.svg" alt="">
+                                </div>
+                                <div class="card-name mt-3">{{choiceBoard.name}}</div>
+                            </div>
+                        </label>
+                    </div>
+                    <pagination-controls id="pagination5" (pageChange)="p5 = $event"></pagination-controls>
+                </div>
+            </div>
+
+            <div class="my-5 p-4 choiceboards" id="recommended" [ngClass]="highlighterID5  ? 'highlighted' : ''">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <i class="fa fa-file shared-cb-icon" aria-hidden="true"></i>
+                        <h6 class="page-heading mx-2 mb-0">Recommended Case Studies & Quizes</h6>
+                    </div>
+                    <div class="filter">
+                        <input type="text" placeholder="Search..." class="form-control">
+                        <i class="fa fa-search"></i>
+                    </div>
+                </div>
+                <div class="my-3 border-box p-3">
+                    <div class="d-flex justify-content-between">
+                        <div class="page-heading">Recommended Cases</div>
+                        <div><button type="button" class="btn btn-sm btn-primary">Link to Choiceboards</button></div>
+                    </div>
+                    <div class="row mx-0 justify-content-center">
+                        <label class="card-checkbox mx-3"
+                            *ngFor="let choiceBoard of choiceBoards | paginate: {id: 'pagination5', itemsPerPage: 4, currentPage: p5 }, let ind = index"
+                            (click)="routeTo('quiz', choiceBoard.name)">
+                            <input type="radio" value="" name="category" class="d-none">
+                            <div class="card-content">
+                                <div class="card-layout d-flex justify-content-center mt-4">
+                                    <div class="quiz-type" *ngIf="ind === 0 || ind === 3" placement="top" ngbTooltip="Case study level - creating"><img
+                                            src="./assets/images/icons-choiceboard/creating-icon.svg"></div>
+                                    <div class="quiz-type" *ngIf="ind === 2 || ind === 5" placement="top" ngbTooltip="Case study level - doing"><img
+                                            src="./assets/images/icons-choiceboard/doing-icon.svg"></div>
+                                    <div class="quiz-type" *ngIf="ind === 1 || ind === 4" placement="top" ngbTooltip="Case study level - knowing"><img
+                                            src="./assets/images/icons-choiceboard/knowing-icon.svg"></div>
+                                    <i class="fa fa-file" aria-hidden="true"></i>
+                                </div>
+                                <div class="card-name mt-3">{{choiceBoard.name}}</div>
+                            </div>
+                        </label>
+                    </div>
+                    <pagination-controls id="pagination5" (pageChange)="p2 = $event"></pagination-controls>
+                </div>
+                <div class="border-box p-3">
+                    <div class="d-flex justify-content-between">
+                        <div class="page-heading">Recommended Quizes</div>
+                        <div><button type="button" class="btn btn-sm btn-primary">Link to Choiceboards</button></div>
+                    </div>
+                    <div class="row mx-0 justify-content-center">
+                        <label class="card-checkbox mx-3"
+                            *ngFor="let choiceBoard of choiceBoards | paginate: {id: 'pagination6', itemsPerPage: 4, currentPage: p6 }, let ind = index"
+                            (click)="routeTo('quiz', choiceBoard.name)">
+                            <input type="radio" value="" name="category" class="d-none">
+                            <div class="card-content">
+                                <div class="card-layout d-flex justify-content-center mt-4 align-items-center">
+                                    <div class="quiz-type" *ngIf="ind === 0 || ind === 3" placement="top" ngbTooltip="Case study level - creating">
+                                        <img src="./assets/images/icons-choiceboard/creating-icon.svg"></div>
+                                    <div class="quiz-type" *ngIf="ind === 2 || ind === 5" placement="top" ngbTooltip="Case study level - doing"><img
+                                            src="./assets/images/icons-choiceboard/doing-icon.svg"></div>
+                                    <div class="quiz-type" *ngIf="ind === 1 || ind === 4" placement="top" ngbTooltip="Case study level - knowing"><img
+                                            src="./assets/images/icons-choiceboard/knowing-icon.svg"></div>
+                                    <img src="./assets/images/icons-choiceboard/quiz_new.svg" alt="">
+                                    <!-- <i class="fa fa-question" aria-hidden="true"></i> -->
+                                </div>
+                                <div class="card-name mt-3">{{choiceBoard.name}}</div>
+                            </div>
+                        </label>
+                    </div>
+                    <pagination-controls id="pagination6" (pageChange)="p6 = $event"></pagination-controls>
+                </div>
+            </div>
+
+
+            <!-- <div class="ws-content p-5 mb-5">
+                    <h5 class="page-heading mb-4">Your Workspaces</h5>
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center workspace py-4" (click)="goToSetup()">
+                            <div class="ws-name">Add Workspace</div>
+                            <div>
+                                <button class="btn add-button">
+                                    <img src="././assets/images/icons-choiceboard/plus.svg">
+                                </button>
+                            </div>
+                        </div>
+                        <div *ngFor="let workspace of workspaces, let i = index">
+                            <div class="d-flex justify-content-between workspace py-4" (click)="routeTo()">
+                                <div class="d-flex align-items-center">
+                                    <div class="ws-icon"><i class="fa fa-briefcase"></i></div>
+                                    <div class="mx-3 ws-name">{{workspace.name}}</div>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary">Share</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="ws-content p-5 mb-5">
+                    <h5 class="page-heading mb-4">Workspace Shared with Me</h5>
+                    <div>
+                        <div *ngFor="let workspace of workspaces, let i = index">
+                            <div class="d-flex justify-content-between workspace py-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="ws-icon"><i class="fa fa-briefcase"></i></div>
+                                    <div class="mx-3 ws-name">{{workspace.name}}</div>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary">Share</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+        </div>
+    </div>
+</div>
+
+
+<ng-template #content let-modal>
+    <div class="modal-body">
+
+        <div class="text-center">
+            <h4 class="page-heading pb-2">Are you sure want delete to the ChoiceBoard</h4>
+
+
+
+            <div class="d-flex justify-content-center pt-4">
+                <div class="mx-2">
+                    <button type="button" class="btn btn-light" (click)="modal.dismiss('Cross click')">No</button>
+                </div>
+                <button type="button" class="btn btn-primary" (click)="modal.dismiss('Cross click')">Yes</button>
+
+            </div>
+        </div>
+    </div>
+</ng-template>

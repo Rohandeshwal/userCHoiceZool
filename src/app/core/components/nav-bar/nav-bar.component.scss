@@ -1,0 +1,60 @@
+@import "../../../../assets/styles/scss/variable.scss";
+
+.side-nav-bar {
+  padding: 6px 6px;
+  opacity: 0.9;
+  border-radius: 0;
+  align-items: center;
+  z-index: 102;
+
+  .toggle-icon {
+    font-size: $primaryInputLgSize;
+    cursor: pointer;
+
+    .ng-fa-icon {
+      color: $primaryYellow !important;
+    }
+  }
+
+  .nav-content {
+    cursor: pointer;
+    
+    .nav-items {
+      color: $primaryGrey;
+      font-size: $tertiaryFontSize;
+      text-align: center;
+
+      &:hover {
+        // background: $primaryYellow;
+        // color: $primaryBlack;
+        img {
+          filter: invert(100%);
+        }
+      }
+
+      .nav-icon {
+        font-size: $primaryFontSize;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+        &:hover{
+          background: #eee;
+        }
+      }
+      .nav-text {
+        font-size: $tertiaryFontSize;
+        white-space: nowrap;
+        width: 90px;
+      }
+    }
+  }
+}
+
+.rightBorder{
+  border-right: 1px solid #ccc;
+  margin-right: 10px;
+  padding-right: 10px;
+}

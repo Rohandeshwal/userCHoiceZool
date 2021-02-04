@@ -1,0 +1,68 @@
+@import "../../../../assets/styles/scss/variable.scss";
+.container, .container-fluid {
+  .logo {
+    padding: 4px 0;
+  }
+
+  .profile {
+    .notification{
+      cursor: pointer;
+      i{
+        color: $primaryCardColor
+      }
+    }
+    .user-name {
+      font-size: $secondaryFontSize;
+      font-weight: $sixhundred;
+      line-height: 1.2;
+    }
+
+    .user-tag {
+      font-size: $smallFontSize;
+      color: $primaryGrey;
+      font-weight: $sixhundred;
+      text-align: right;
+      line-height: 1.2;
+    }
+
+    .profile-img {
+      cursor: pointer;
+      img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+      }
+    }
+
+    .profile-tool-bar {
+      background: $primaryWhite;
+      color: $primaryBlack;
+      position: absolute;
+      top: 82px;
+      width: 224px;
+      right: 15px;
+      padding: 10px;
+      border-radius: 0px;
+      z-index: 110;
+
+      .tool-bar-item {
+        line-height: 2.5;
+        padding: 0 20px;
+        border-radius: 10px;
+        color: $primaryBlack;
+        font-size: $tertiaryFontSize;
+
+        &:hover,
+        &:active {
+          background: $primaryHover;
+          text-decoration: none;
+        }
+
+        img {
+          margin-right: 15px;
+          width: 15px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+@import "../../../../assets/styles/scss/variable.scss";
+
+.history-wrapper {
+  .history-accordian {
+    .comments-section {
+      border-left: 1px solid $primaryCardColor;
+      .cb-comments {
+        position: relative;
+        .list-style {
+          width: 30px;
+          display: flex;
+
+          
+          align-items: center;
+          position: absolute;
+          .line {
+            width: 15px;
+            border-bottom: 1px solid $primaryCardColor;
+          }
+          .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: $primaryCardColor;
+          }
+        }
+
+        .question {
+          color: $primaryMidnightBlue;
+          font-size: $secondaryFontSize;
+          font-weight: $sixhundred;
+          padding-left: 35px;
+        }
+
+        .update-time {
+          color: #c1c1c1;
+          font-size: $smallFontSize;
+          width: 26%;
+        }
+
+        .edit-content {
+          color: $primaryMidnightBlue;
+          font-weight: $sixhundred;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .comments-desc {
+      color: $primaryCardColor;
+      font-size: $secondaryFontSize;
+      padding-left: 35px;
+    }
+
+    .description {
+      color: $primaryCardColor;
+      font-size: $tertiaryFontSize;
+      border-left: $cardBorder;
+    }
+  }
+  .card-layout-small {
+    position: relative;
+    height: 58px;
+    width: 59px;
+    border-radius: 10px;
+    box-shadow: $secondaryBoxShadow;
+    border: $inputBorder;
+    background: $primaryWhite;
+
+    img {
+      height: 35px;
+      width: 35px;
+    }
+  }
+}

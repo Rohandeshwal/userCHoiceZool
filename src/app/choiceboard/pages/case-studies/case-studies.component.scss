@@ -1,0 +1,14 @@
+@import "../../../../assets/styles/scss/variable.scss";
+
+.action-btn {
+position: fixed;
+    bottom: 0px;
+    right: 0;
+    width: 100%;
+    /* display: inline-block !important; */
+    text-align: right;
+    // background: rgba(255,255,255,0.6);
+    background: #F7F6FB;
+    justify-content: flex-end;
+    padding: 10px 30px;
+}

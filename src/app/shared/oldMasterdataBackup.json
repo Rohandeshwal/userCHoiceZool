@@ -1,0 +1,406 @@
+[
+    {   "id": 1,
+        "name": "Value Proposition",
+        "level": 1,
+        "icon": "./assets/images/category-individual.svg",
+        "children": [
+            {   "id": 2,
+                "name": "WHAT CUSTOMER PROBLEMS/NEEDS ARE YOU SOLVING?",
+                "level": 2,
+                "icon": "./assets/images/category-individual.svg",
+                "children": [
+                    {   "id": 3,
+                        "name": "REASONABLE PRICE",
+                        "level": "bc",
+                        "icon": "./assets/images/category-individual.svg"
+                    }
+                ]
+            },
+            {   "id": 4,
+                "name": "WHAT ARE CUSTOMERS LOOKING FOR? - CUST VALUE DRIVERS",
+                "level": 2,
+                "icon": "./assets/images/category-individual.svg",
+                "children": [
+                    {   "id": 5,
+                        "name": "FROM CURRENT OFFERINGS",
+                        "level": 3,
+                        "icon": "./assets/images/category-individual.svg",
+                        "children": [
+                            {   "id": 6,
+                                "name": "PRICE",
+                                "level": "bc",
+                                "icon": "./assets/images/category-individual.svg"
+                            },
+                            {   "id": 7,
+                                "name": "RELEVANCE",
+                                "level": "bc",
+                                "icon": "./assets/images/category-individual.svg"
+                            },
+                            {   "id": 8,
+                                "name": "SERVICE",
+                                "level": "bc",
+                                "icon": "./assets/images/category-individual.svg"
+                            }
+                        ]
+                    },
+                    {   "id": 9,
+                        "name": "FROM FUTURE OFFERINGS",
+                        "level": 3,
+                        "icon": "./assets/images/category-individual.svg",
+                        "children": [
+                            {   "id": 10,
+                                "name": "ALL CURRENT OFFERING VALUE DRIVERS",
+                                "level": "bc",
+                                "icon": "./assets/images/category-individual.svg"
+                            },
+                            {   "id": 11,
+                                "name": "UNMET NEEDS",
+                                "level": "bc",
+                                "icon": "./assets/images/category-individual.svg"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {   "id": 12,
+                "name": "DEFINING ELEMENTS OF VALUE FOR YOUR OFFERING",
+                "level": 2,
+                "icon": "./assets/images/category-individual.svg",
+                "children": [
+                    {   "id": 13,
+                        "name": "B2C BUSINESS TYPE",
+                        "level": 3,
+                        "icon": "./assets/images/category-individual.svg",
+                        "children": [
+                            {   "id": 14,
+                                "name": "BASIC (HARD) FACTORS",
+                                "level": 4,
+                                "icon": "./assets/images/category-individual.svg",
+                                "children": [
+                                    {   "id": 15,
+                                        "name": "SAVES TIME",
+                                        "level": "bc",
+                                        "icon": "./assets/images/category-individual.svg"
+                                    },
+                                    {   "id": 16,
+                                        "name": "SIMPLIFIES",
+                                        "level": "bc",
+                                        "icon": "./assets/images/category-individual.svg"
+                                    },
+                                    {   "id": 17,
+                                        "name": "REDUCES RISK",
+                                        "level": "bc",
+                                        "icon": "./assets/images/category-individual.svg"
+                                    }
+                                ]
+                            },
+                            {   "id": 18,
+                                "name": "SOFT FACTORS",
+                                "level": 4,
+                                "icon": "./assets/images/category-individual.svg",
+                                "children": [
+                                    {   "id": 19,
+                                        "name": "REDUCES ANXIETY",
+                                        "level": "bc",
+                                        "icon": "./assets/images/category-individual.svg"
+                                    },
+                                    {   "id": 20,
+                                        "name": "REWARDS ME",
+                                        "level": "bc",
+                                        "icon": "./assets/images/category-individual.svg"
+                                    },
+                                    {   "id": 21,
+                                        "name": "NOSTALGIA",
+                                        "level": "bc",
+                                        "icon": "./assets/images/category-individual.svg"
+                                    }
+                                ]
+                            },
+                            {   "id": 22,
+                                "name": "LIFE ALTERING",
+                                "level": 4,
+                                "icon": "./assets/images/category-individual.svg",
+                                "children": [
+                                    {   "id": 23,
+                                        "name": "PROVIDES HOPE",
+                                        "level": "bc",
+                                        "icon": "./assets/images/category-individual.svg"
+                                    },
+                                    {   "id": 24,
+                                        "name": "SELF ACTUALISATION",
+                                        "level": "bc",
+                                        "icon": "./assets/images/category-individual.svg"
+                                    },
+                                    {   "id": 25,
+                                        "name": "MOTIVATION",
+                                        "level": "bc",
+                                        "icon": "./assets/images/category-individual.svg"
+                                    }
+                                ]
+                            },
+                            {   "id": 26,
+                                "name": "SOCIAL IMPACT",
+                                "level": 4,
+                                "icon": "./assets/images/category-individual.svg",
+                                "children": [
+                                    {   "id": 27,
+                                        "name": "SELF TRANSCENDENCE",
+                                        "level": "bc",
+                                        "icon": "./assets/images/category-individual.svg"
+                                    },
+                                    {   "id": 28,
+                                        "name": "ENVIRONMENT",
+                                        "level": "bc",
+                                        "icon": "./assets/images/category-individual.svg"
+                                    },
+                                    {   "id": 29,
+                                        "name": "COMMUNITY",
+                                        "level": "bc",
+                                        "icon": "./assets/images/category-individual.svg"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {   "id": 30,
+                        "name": "B2B BUSINESS TYPE",
+                        "level": 3,
+                        "icon": "./assets/images/category-individual.svg",
+                        "children": [
+                            {   "id": 31,
+                                "name": "BASIC REQUIREMENTS",
+                                "level": 4,
+                                "icon": "./assets/images/category-individual.svg",
+                                "children": [
+                                    {   "id": 32,
+                                        "name": "CONFORMS TO PRE-REQUISITES",
+                                        "level": "bc",
+                                        "icon": "./assets/images/category-individual.svg"
+                                    },
+                                    {   "id": 33,
+                                        "name": "COMPLIANCE",
+                                        "level": "bc",
+                                        "icon": "./assets/images/category-individual.svg"
+                                    }
+                                ]
+                            },
+                            {   "id": 34,
+                                "name": "UTILITARIAN VALUE - PERFORMANCE FEATURES",
+                                "level": 4,
+                                "icon": "./assets/images/category-individual.svg",
+                                "children": [
+                                    {   "id": 35,
+                                        "name": "QUALITY",
+                                        "level": "bc",
+                                        "icon": "./assets/images/category-individual.svg"
+                                    }
+                                ]
+                            },
+                            {   "id": 36,
+                                "name": "UTILITARIAN VALUE - FINANCIAL FEATURES",
+                                "level": 4,
+                                "icon": "./assets/images/category-individual.svg",
+                                "children": [
+                                    {   "id": 37,
+                                        "name": "REVENUE IMPACT",
+                                        "level": "bc",
+                                        "icon": "./assets/images/category-individual.svg"
+                                    }
+                                ]
+                            },
+                            {   "id": 38,
+                                "name": "COLLABORATIVE VALUE - EFFICIENCY FEATURES",
+                                "level": 4,
+                                "icon": "./assets/images/category-individual.svg",
+                                "children": [
+                                    {   "id": 39,
+                                        "name": "SAVES TIME",
+                                        "level": "bc",
+                                        "icon": "./assets/images/category-individual.svg"
+                                    },
+                                    {   "id": 40,
+                                        "name": "REDUCES EFFORT",
+                                        "level": "bc",
+                                        "icon": "./assets/images/category-individual.svg"
+                                    }
+                                ]
+                            },
+                            {   "id": 41,
+                                "name": "COLLABORATIVE VALUE - CHOICE FEATURES",
+                                "level": 4,
+                                "icon": "./assets/images/category-individual.svg",
+                                "children": [
+                                    {   "id": 42,
+                                        "name": "AVAILABILITY",
+                                        "level": "bc",
+                                        "icon": "./assets/images/category-individual.svg"
+                                    }
+                                ]
+                            },
+                            {   "id": 43,
+                                "name": "COLLABORATIVE VALUE - DEPENDABILITY FEATURES",
+                                "level": 4,
+                                "icon": "./assets/images/category-individual.svg",
+                                "children": [
+                                    {   "id": 44,
+                                        "name": "RESPONSIVE",
+                                        "level": "bc",
+                                        "icon": "./assets/images/category-individual.svg"
+                                    },
+                                    {   "id": 45,
+                                        "name": "CAPABILITY",
+                                        "level": "bc",
+                                        "icon": "./assets/images/category-individual.svg"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {   "id": 46,
+                "name": "HOW ARE YOU CREATING VALUE? - VALUE CREATION MODELS",
+                "level": 2,
+                "icon": "./assets/images/category-individual.svg",
+                "childrens": [
+                    {   "id": 47,
+                        "name": "STRENGTHEN",
+                        "level": 3,
+                        "icon": "./assets/images/category-individual.svg",
+                        "children": [
+                            {   "id": 48,
+                                "name": "ADD NEW ATTRIBUTES",
+                                "level": "bc",
+                                "icon": "./assets/images/category-individual.svg"
+                            },
+                            {   "id": 49,
+                                "name": "ADD BASED ON PRICE DISCOVERY",
+                                "level": "bc",
+                                "icon": "./assets/images/category-individual.svg"
+                            }
+                        ]
+                    },
+                    {   "id": 50,
+                        "name": "SHRINK",
+                        "level": 3,
+                        "icon": "./assets/images/category-individual.svg",
+                        "children": [
+                            {   "id": 51,
+                                "name": "BASED ON CUSTOMER NEED",
+                                "level": "bc",
+                                "icon": "./assets/images/category-individual.svg"
+                            }
+                        ]
+                    },
+                    {   "id": 52,
+                        "name": "CUSTOMISE",
+                        "level": 3,
+                        "icon": "./assets/images/category-individual.svg",
+                        "children": [
+                            {   "id": 53,
+                                "name": "REDUCE EXPENSIVE UNUSED FEATURES",
+                                "level": "bc",
+                                "icon": "./assets/images/category-individual.svg"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {   "id": 54,
+                "name": "HOW ARE YOU DELIVERING VALUE? - VALUE OFFERING MODELS",
+                "level": 2,
+                "icon": "./assets/images/category-individual.svg",
+                "children": [
+                    {   "id": 55,
+                        "name": "CUSTOM PRODUCT/SERVICE MODEL",
+                        "level": "bc",
+                        "icon": "./assets/images/category-individual.svg"
+                    },
+                    {   "id": 56,
+                        "name": "MANY FOR ALL MODEL",
+                        "level": "bc",
+                        "icon": "./assets/images/category-individual.svg"
+                    }
+                ]
+            }
+        ]
+    },
+    {   "id": 57,
+        "name": "TRANSACTION TYPES",
+        "level": 1,
+        "icon": "./assets/images/category-individual.svg",
+        "children": [
+            {   "id": 58,
+                "name": "REASONABLE PRICE",
+                "level": "bc",
+                "icon": "./assets/images/category-individual.svg"
+            },
+            {   "id": 59,
+                "name": "SERVICES SALE",
+                "level": "bc",
+                "icon": "./assets/images/category-individual.svg"
+            },
+            {   "id": 60,
+                "name": "COMPLETE OFFERING SALE",
+                "level": "bc",
+                "icon": "./assets/images/category-individual.svg"
+            },
+            {   "id": 61,
+                "name": "FREE",
+                "level": "bc",
+                "icon": "./assets/images/category-individual.svg"
+            },
+            {   "id": 62,
+                "name": "LESS MONEY",
+                "level": "bc",
+                "icon": "./assets/images/category-individual.svg"
+            },
+            {   "id": 63,
+                "name": "MORE MONEY",
+                "level": "bc",
+                "icon": "./assets/images/category-individual.svg"
+            }
+        ]
+    },
+    {   "id": 64,
+        "name": "BUSINESS CONSTITUENTS",
+        "level": 1,
+        "icon": "./assets/images/category-individual.svg",
+        "children": [
+            {   "id": 65,
+                "name": "SUPPLY PARTNERS",
+                "level": "2",
+                "icon": "./assets/images/category-individual.svg",
+                "children": [
+                    {   "id": 66,
+                        "name": "INVENTOR",
+                        "level": "bc",
+                        "icon": "./assets/images/category-individual.svg"
+                    },
+                    {   "id": 67,
+                        "name": "PRODUCER",
+                        "level": "bc",
+                        "icon": "./assets/images/category-individual.svg"
+                    }
+                ]
+            },
+            {   "id": 68,
+                "name": "SALES CHANNEL",
+                "level": "2",
+                "icon": "./assets/images/category-individual.svg",
+                "children": [
+                    {   "id": 69,
+                        "name": "AFFILIATE",
+                        "level": "bc",
+                        "icon": "./assets/images/category-individual.svg"
+                    },
+                    {   "id": 70,
+                        "name": "FRANCHISEE",
+                        "level": "bc",
+                        "icon": "./assets/images/category-individual.svg"
+                    }
+                ]
+            }
+        ]
+    }
+]

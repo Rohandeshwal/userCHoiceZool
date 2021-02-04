@@ -1,0 +1,19 @@
+<div class="sub-module-wrapper">
+    <div class="page-heading">Select The Sub Module</div>
+    <div class="sub-module-list p-5">
+        <label *ngFor="let submodule of subModules, let i = index" class="card-checkbox marl-10 marr-10 marb-30" (click)="routeTo()">
+            <input type="radio" value="" name="category" class="d-none">
+            <div class="card-content">
+                <div class="card-layout d-flex justify-content-center">
+                    <img [src]="submodule.subModuleIcon">
+                        <span class="info-icon d-flex">
+                            <i class="fa fa-registered" aria-hidden="true"></i>
+                                <img src="./assets/images/icons-choiceboard/attachment.svg">
+                                <img src="./assets/images/icons-choiceboard/info-icon.svg">
+                        </span>
+                </div>
+                <div class="card-name mart-30">{{submodule.subModuleName}}</div>
+            </div>
+        </label>
+    </div>
+</div>

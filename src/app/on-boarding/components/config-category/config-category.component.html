@@ -1,0 +1,14 @@
+<!-- <div class="text-center"> -->
+    <!-- <h6 class="text-muted">Choose your Category</h6> -->
+    <div class="row m-0 justify-content-between category-wrapper">
+        <label *ngFor="let category of categories, let i = index"  class="card-checkbox"  id="{{category.value}}" >
+            <input type="radio"  name="category" value="{{category.value}}"  class="d-none" (change)="checkValue($event.target.value)" >
+            <div class="card-content">
+                <div class="card-layout d-flex justify-content-center">
+                    <img src="{{appConfig.imgSrc.prototype}}/{{category.categoryIcon}}">
+                </div>
+                <div class="card-name my-3 d-flex justify-content-center">{{category.categoryName}}</div>
+            </div>
+        </label>
+    </div>
+<!-- </div> -->

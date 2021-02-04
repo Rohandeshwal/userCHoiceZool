@@ -1,0 +1,274 @@
+
+<div class="h-100" style="overflow: auto;">
+    <div class="d-flex container">
+        <div class="side-bar py-5 pr-3">
+            <div>
+                <div class="d-flex align-items-center truncate p-2 my-1" (click)="highlight('my-WS')">
+                    <i class="fa fa-briefcase"></i>
+                    <div class="mx-3">My workspaces</div>
+                </div>
+                <div class="d-flex align-items-center truncate p-2 my-1" (click)="highlight('sharedByMe')">
+                    <i class="fa fa-share-square-o" aria-hidden="true"></i>
+                    <div class="mx-3">Workspaces shared by me</div>
+                </div>
+                <div class="d-flex align-items-center truncate p-2 my-1" (click)="highlight('sharedWS')">
+                    <i class="fa fa-share-square-o" aria-hidden="true"></i>
+                    <div class="mx-3">Workspaces shared with me</div>
+                </div>
+                <div class="d-flex align-items-center truncate p-2 my-1" (click)="highlight('Case-Quiz')">
+                    <i class="fa fa-share-square-o" aria-hidden="true"></i>
+                    <div class="mx-3">My Case Studies and Quizes</div>
+                </div>
+                <div class="d-flex align-items-center truncate p-2 my-1" (click)="routeTo('setup','')">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                    <div class="mx-3">Add a workspace</div>
+                </div>
+            </div>
+            <div class="mt-4">
+                <h6 class="page-heading ft-18">Learning And Resources</h6>
+                <div>
+                    <div class="d-flex align-items-center truncate p-2 my-1">
+                        <i class="fa fa-th" aria-hidden="true"></i>
+                        <div class="mx-3">How to guide</div>
+                    </div>
+                    <div class="d-flex align-items-center truncate p-2 my-1">
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                        <div class="mx-3">Video tutorials</div>
+                    </div>
+                    <div class="d-flex align-items-center truncate p-2 my-1">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>
+                        <div class="mx-3">Help center</div>
+                    </div>
+                    <div class="d-flex align-items-center truncate p-2 my-1">
+                        <i class="fa fa-gift" aria-hidden="true"></i>
+                        <div class="mx-3">What's new</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="ws-container py-5 w-100">
+                <div class="ws-content p-4 mb-5" id="my-WS" [ngClass]="highlighterID1  ? 'highlighted' : ''">
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="d-flex align-items-center">
+                            <i class="fa fa-briefcase shared-cb-icon" aria-hidden="true"></i>
+                            <h6 class="page-heading mx-2 mb-0 ft-18">Your Workspaces</h6>
+                        </div>
+                        <div class="d-flex">
+                            <div class="filter mr-3" (click)="searchWorkSpace()">
+                                <input type="text" placeholder="Find..." class="form-control">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <div (click)="routeTo('setup', '')" placement="top" ngbTooltip="Add Workspace">
+                                <button class="btn add-button">
+                                    <img src="./assets/images/icons-choiceboard/plus.svg">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                        <div *ngFor="let workspace of workspaces, let i = index">
+                            <div class="d-flex justify-content-between workspace py-4">
+                                <div class="d-flex align-items-center" (click)="routeTo('choiceboard', workspace.name)">
+                                    <div class="ws-icon"><i class="fa fa-briefcase"></i></div>
+                                    <div class="mx-3 ws-name">{{workspace.name}}</div>
+                                </div>
+                                <div class="d-flex" ngbDropdown>
+                                    <button class="btn add-button ml-4" id="dropdownConfig" ngbDropdownToggle><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </button>
+                                    <div ngbDropdownMenu aria-labelledby="dropdownConfig">
+                                        <button ngbDropdownItem>Clone</button>
+                                        <button ngbDropdownItem (click)="openDeleteModal(deleteModal)">Delete</button>
+                                        <button ngbDropdownItem (click)="routeTo('choiceboard', workspace.name)">Edit</button>
+                                        <button ngbDropdownItem (click)="routeTo('setup','')">Edit workspace context</button>
+                                        <button ngbDropdownItem (click)="openModal()">Share</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="ws-content p-4 mb-5" id="sharedByMe" [ngClass]="highlighterID2  ? 'highlighted' : ''">
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <i class="fa fa-briefcase shared-cb-icon" aria-hidden="true"></i>
+                            <h6 class="page-heading mx-2 mb-0 ft-18">Workspaces Shared by Me</h6>
+                        </div>
+                        <div class="filter" (click)="searchWorkSpace()">
+                            <input type="text" placeholder="Find..." class="form-control">
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </div>
+                        <div *ngFor="let workspace of workspaces, let i = index">
+                            <div class="d-flex justify-content-between workspace py-4">
+                                <div class="d-flex align-items-center" (click)="routeTo('choiceboard', workspace.name)">
+                                    <div class="ws-icon"><i class="fa fa-briefcase"></i></div>
+                                    <div class="mx-3 ws-name">{{workspace.name}}</div>
+                                </div>
+                                <div class="d-flex" ngbDropdown>
+                                    <button class="btn add-button ml-4" id="dropdownConfig" ngbDropdownToggle><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </button>
+                                    <div ngbDropdownMenu aria-labelledby="dropdownConfig">
+                                        <button ngbDropdownItem (click)="routeTo('choiceboard', workspace.name)">Edit</button>
+                                        <button ngbDropdownItem (click)="routeTo('setup','')">Edit workspace context</button>
+                                        <button ngbDropdownItem (click)="openModal()">Share</button>
+                                        <button ngbDropdownItem (click)="openDeleteModal(deleteModal)">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            
+                <div class="ws-content p-4 mb-5" id="sharedWS" [ngClass]="highlighterID3  ? 'highlighted' : ''">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div class="d-flex align-items-center">
+                            <i class="fa fa-share-square-o shared-cb-icon" aria-hidden="true"></i>
+                            <h6 class="page-heading mx-2 mb-0 ft-18">Workspaces Shared with Me</h6>
+                        </div>
+                        <div class="filter" (click)="searchWorkSpace()">
+                            <input type="text" placeholder="Find..." class="form-control">
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <div *ngFor="let workspace of workspaces, let i = index">
+                            <div class="d-flex justify-content-between workspace py-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="ws-icon"><i class="fa fa-briefcase"></i></div>
+                                    <div class="mx-3 ws-name">{{workspace.name}}</div>
+                                </div>
+                                <div class="d-flex" ngbDropdown>
+                                    <button class="btn add-button ml-4" id="dropdownConfig" ngbDropdownToggle><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </button>
+                                    <div ngbDropdownMenu aria-labelledby="dropdownConfig">
+                                        <button ngbDropdownItem>Clone</button>
+                                        <button ngbDropdownItem (click)="routeTo('choiceboard', workspace.name)">Preview</button>
+                                        <button ngbDropdownItem (click)="routeTo('choiceboard', workspace.name)">Edit</button>
+                                        <button ngbDropdownItem >Comment</button> <!--(click)="openDeleteModal(deleteModal)"-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ws-content p-4 mb-5" id="Case-Quiz" [ngClass]="highlighterID4  ? 'highlighted' : ''">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div class="d-flex align-items-center">
+                            <i class="fa fa-share-square-o shared-cb-icon" aria-hidden="true"></i>
+                            <h6 class="page-heading mx-2 mb-0 ft-18">My Cases Studies & Quizes</h6>
+                        </div>
+                        <div class="filter">
+                            <input type="text" placeholder="Find..." class="form-control">
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </div>
+                    <div class="my-3 border-box py-3">
+                        <div class="d-flex justify-content-between mb-2">
+                            <div class="page-heading">My Cases Studies</div>
+                            <div><button type="button" class="btn btn-sm btn-primary">Link to Workspaces</button></div>
+                        </div>
+                        <div *ngFor="let workspace of workspaces, let i = index">
+                            <div class="d-flex justify-content-between workspace py-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="ws-icon"><i class="fa fa-file"></i></div>
+                                    <div class="mx-3 ws-name">{{workspace.name}}</div>
+                                </div>
+                                <div class="d-flex" ngbDropdown>
+                                    <button class="btn add-button ml-4" id="dropdownConfig" ngbDropdownToggle><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </button>
+                                    <div ngbDropdownMenu aria-labelledby="dropdownConfig">
+                                        <button ngbDropdownItem>Preview</button>
+                                        <button ngbDropdownItem>Edit</button>
+                                        <button ngbDropdownItem >Comment</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="my-3 border-box py-3">
+                        <div class="d-flex justify-content-between mb-2">
+                            <div class="page-heading">My Quizes</div>
+                            <div><button type="button" class="btn btn-sm btn-primary">Link to Workspaces</button></div>
+                        </div>
+                        <div *ngFor="let workspace of workspaces, let i = index">
+                            <div class="d-flex justify-content-between workspace py-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="ws-icon"><img src="./assets/images/icons-choiceboard/quiz_new.svg"></div>
+                                    <div class="mx-3 ws-name">{{workspace.name}}</div>
+                                </div>
+                                <div class="d-flex" ngbDropdown>
+                                    <button class="btn add-button ml-4" id="dropdownConfig" ngbDropdownToggle><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </button>
+                                    <div ngbDropdownMenu aria-labelledby="dropdownConfig">
+                                        <button ngbDropdownItem>Preview</button>
+                                        <button ngbDropdownItem>Edit</button>
+                                        <button ngbDropdownItem>Comment</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="mt-5 p-4 choiceboards" id="Case-Quiz"  [ngClass]="highlighterID4  ? 'highlighted' : ''">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <i class="fa fa-file shared-cb-icon" aria-hidden="true"></i>
+                            <h6 class="page-heading mx-2 mb-0 ft-18">My Cases Studies & Quizes</h6>
+                        </div>
+                        <div class="filter mr-3">
+                            <input type="text" placeholder="Search..." class="form-control">
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </div>
+                    <div class="my-3 border-box p-3">
+                        <div class="page-heading">My Cases Studies</div>
+                        <div class="row mx-0 justify-content-center">
+                            <label class="card-checkbox mx-3" *ngFor="let workspace of workspaces | paginate: {id: 'pagination3', itemsPerPage: 4, currentPage: p3 }, let j = index" (click)="routeTo('case-study', workspace.name)">
+                                <input type="radio" value="" name="category" class="d-none">
+                                <div class="card-content">
+                                    <div class="card-layout d-flex justify-content-center mt-4">
+                                        <i class="fa fa-file" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="card-name mt-3">{{workspace.name}}</div>
+                                </div>
+                            </label>
+                        </div>
+                        <pagination-controls id="pagination3" (pageChange)="p3 = $event"></pagination-controls>
+                    </div>
+                    <div class="border-box p-3">
+                        <div class="page-heading">My Quizes</div>
+                        <div class="row mx-0 justify-content-center">
+                            <label class="card-checkbox mx-3" *ngFor="let workspace of workspaces | paginate: {id: 'pagination4', itemsPerPage: 4, currentPage: p4 }, let k = index" (click)="routeTo('quiz', workspace.name)">
+                                <input type="radio" value="" name="category" class="d-none">
+                                <div class="card-content">
+                                    <div class="card-layout d-flex justify-content-center mt-4">
+                                        <i class="fa fa-question" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="card-name mt-3">{{workspace.name}}</div>
+                                </div>
+                            </label>
+                        </div>
+                        <pagination-controls id="pagination4" (pageChange)="p2 = $event"></pagination-controls>
+                    </div>
+                </div> -->
+        </div>
+    </div>
+</div>
+
+
+
+  <ng-template #deleteModal let-modal>
+    <div class="modal-body">
+        <div class="text-center">
+            <h4 class="page-heading pb-2">Are you sure want delete to the Workspace</h4>   
+            <div class="d-flex justify-content-center pt-4">
+                <div class="mx-2">
+                    <button type="button" class="btn btn-light" (click)="modal.dismiss('Cross click')">No</button>
+                </div>
+                <button type="button" class="btn btn-primary" (click)="modal.dismiss('Cross click')">Yes</button>
+            </div>
+        </div>
+    </div>
+  </ng-template>
+

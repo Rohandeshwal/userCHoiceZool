@@ -1,0 +1,140 @@
+<!-- <div>
+        <div>
+                <app-student-cat-form></app-student-cat-form>
+        </div>
+</div> -->
+<div class="py-5 container">
+  <form>
+    <div class="d-flex justify-content-between form-group">
+      <div class="w-33 mx-2">
+     
+        <input type="text" placeholder="Name" class="form-control">
+      </div>
+
+      <div class="w-33 mx-2">
+        <input type="text" placeholder="Enter your mobile number" class="form-control">
+      </div>
+
+      <div class="w-33 mx-2">
+        <input type="email" placeholder="Email*" class="form-control">
+      </div>
+    </div>
+
+    <!-- Student -->
+    <div class="d-flex form-group" *ngIf="userCategory === 'student'">
+      <div class="w-50 mx-2">
+        <input type="email" placeholder="Name of University" class="form-control">
+      </div>
+      <div class="w-50 mx-2">
+        <input type="text" placeholder="Specialisation Subject" class="form-control">
+      </div>
+    </div>
+    
+
+    <!-- Business -->
+
+    <div class="d-flex form-group" *ngIf="userCategory === 'business'">
+      <div class="w-33 mx-2">
+        <select class="form-control">
+          <option>Business Function*</option>
+        </select>
+      </div>
+
+      <div class="w-33 mx-2">
+        <select class="form-control">
+          <option>Title*</option>
+        </select>
+      </div>
+
+      <div class="w-33 mx-2">
+        <select class="form-control">
+          <option>Industry*</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Collaborator -->
+
+    <div class="d-flex form-group" *ngIf="userCategory === 'collaborator'">
+      <div class="w-33 mx-2">
+        <input type="text" placeholder="Work Experience" class="form-control">
+      </div>
+
+      <div class="w-33 mx-2">
+        <input type="text" placeholder="Website" class="form-control">
+      </div>
+
+      <div class="w-33 mx-2">
+        <input type="text" placeholder="Area of Exoertise*" class="form-control">
+      </div>
+    </div>
+
+    <!-- Institution -->
+
+    <div class="d-flex form-group" *ngIf="userCategory === 'institution'">
+
+      <div class="w-50 mx-2">
+        <input type="text" placeholder="Title" class="form-control">
+      </div>
+
+      <div class="w-50 mx-2">
+        <select class="form-control">
+          <option>Subject Area</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Professionals -->
+
+    <div *ngIf="userCategory === 'individual'">
+      <div class="d-flex form-group">
+
+        <div class="w-50 mx-2">
+          <input type="text" placeholder="Company Name*" class="form-control">
+        </div>
+
+        <div class="w-50 mx-2">
+          <input type="text" placeholder="Designation" class="form-control">
+        </div>
+      </div>
+
+      <div class="d-flex form-group">
+        <div class="w-33 mx-2">
+          <select class="form-control">
+            <option>Business Function*</option>
+          </select>
+        </div>
+
+        <div class="w-33 mx-2">
+          <select class="form-control">
+            <option>Work Experience</option>
+          </select>
+        </div>
+
+        <div class="w-33 mx-2">
+          <input type="text" placeholder="Company Website" class="form-control">
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex form-group">
+      <div class="w-33 mx-2">
+        <select class="form-control">
+          <option>Select Country*</option>
+        </select>
+      </div>
+
+      <div class="w-33 mx-2">
+        <select class="form-control">
+          <option class="form-control">State*</option>
+        </select>
+      </div>
+
+      <div class="w-33 mx-2">
+        <select class="form-control">
+          <option>City*</option>
+        </select>
+      </div>
+    </div>
+  </form>
+</div>

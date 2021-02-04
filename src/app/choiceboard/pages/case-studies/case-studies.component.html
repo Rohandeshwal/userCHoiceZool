@@ -1,0 +1,27 @@
+<div *ngIf="!open">
+    <app-case-study-list (hideCaseList)="openCaseStudy()"></app-case-study-list>
+</div>
+
+<div class="d-flex h-100" *ngIf="open">
+    <!-- <div>
+        <app-nav-bar></app-nav-bar>
+    </div> -->
+    <div class="p-5 w-100" style="overflow: auto;">
+        <div>
+            <app-case-study-info></app-case-study-info>
+        </div>
+        <!-- <div>
+            <app-case-study-challenge></app-case-study-challenge>
+        </div> -->
+    
+        <div class="d-flex action-btn">
+                <div class="mx-3">
+                    <button (click)="this.open = false"
+                        class="btn btn-light">Cancel</button>
+                </div>
+                <div class="mx-3">
+                    <button (click)="this.open = false" class="btn btn-primary">Save</button>
+                </div>
+        </div>
+    </div>
+</div>

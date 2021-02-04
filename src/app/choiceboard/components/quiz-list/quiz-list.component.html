@@ -1,0 +1,24 @@
+<div class="h-100">
+    <div class="d-flex h-100">
+        <!-- <div>
+            <app-nav-bar></app-nav-bar>
+        </div> -->
+        <div class="w-100">
+            <div class="p-5">
+                <h3 class="page-heading pb-3 bottom-border">Quiz List</h3>
+                <div class="pt-5">
+                    <table class="table table-striped">
+                        <tbody>
+                            <tr class="row-quiz"
+                                *ngFor=" let item of quizList | paginate: { itemsPerPage: 10, currentPage: p }, let i = index" (click)="openQuizList()">
+                                <td class="link-text">{{item.name}}</td>
+                                <td class="view-button"><button class="btn btn-sm btn-outline-secondary">Explore</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <pagination-controls (pageChange)="p = $event"></pagination-controls>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,142 @@
+
+    <div class="context-box py-3 modal-body">
+        <div class="modal-header justify-content-center align-items-center ft-22">Search Workspace</div>
+        <h5 class="col ft-18 page-heading">Workspace Context</h5>
+        <div class="col mb-4">
+          <small>The workspace context allows you to categorize your work based on the context for which you
+            are working to formulate a business strategy</small>
+        </div>
+        <div class="m-3 py-3 context">
+          <h6 class="col ft-14 page-heading">Industry and Sectors Context</h6>
+          <div class="row mx-0">
+            <div class="col">
+              <div class="form-group d-flex" ngbDropdown >
+                <input type="text" class="form-control" placeholder="Select Industry">
+                <!-- <select class="form-control">
+                  <option>Finance</option>
+                  <option>ITES/BPO</option>
+                  <option>Manufacturing</option>
+                </select> -->
+                <div id="dropdownBasic1" class="form-control dropdown-btn" ngbDropdownToggle></div>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                  <button ngbDropdownItem>IT</button>
+                  <button ngbDropdownItem>BPO</button>
+                  <button ngbDropdownItem>Manufacturing</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group d-flex" ngbDropdown >
+                <input type="text" class="form-control" placeholder="Select Sector">
+                <!-- <select class="form-control">
+                  <option>Finance</option>
+                  <option>ITES/BPO</option>
+                  <option>Manufacturing</option>
+                </select> -->
+                <div id="dropdownBasic1" class="form-control dropdown-btn" ngbDropdownToggle></div>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                  <button ngbDropdownItem>Govt.</button>
+                  <button ngbDropdownItem>Private</button>
+                  <button ngbDropdownItem>NGO</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="m-3 py-3 context">
+          <h6 class="col ft-14 page-heading">Geography Context</h6>
+            <div class="row mx-0">
+              <div class="col-6">
+                <div class="form-group d-flex" ngbDropdown >
+                  <input type="text" class="form-control" placeholder="Select Country">
+                  <!-- <select class="form-control">
+                    <option>Finance</option>
+                    <option>ITES/BPO</option>
+                    <option>Manufacturing</option>
+                  </select> -->
+                  <div id="dropdownBasic1" class="form-control dropdown-btn" ngbDropdownToggle></div>
+                  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                    <button ngbDropdownItem>India</button>
+                    <button ngbDropdownItem>United States</button>
+                    <button ngbDropdownItem>United Kingdom</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group d-flex" ngbDropdown >
+                  <input type="text" class="form-control" placeholder="Select Region">
+                  <!-- <select class="form-control">
+                    <option>Finance</option>
+                    <option>ITES/BPO</option>
+                    <option>Manufacturing</option>
+                  </select> -->
+                  <div id="dropdownBasic1" class="form-control dropdown-btn" ngbDropdownToggle></div>
+                  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                    <button ngbDropdownItem>South Asia</button>
+                    <button ngbDropdownItem>Asia/Pacefic</button>
+                    <button ngbDropdownItem>Western Europe</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group d-flex" ngbDropdown >
+                  <input type="text" class="form-control" placeholder="Select State">
+                  <!-- <select class="form-control">
+                    <option>Finance</option>
+                    <option>ITES/BPO</option>
+                    <option>Manufacturing</option>
+                  </select> -->
+                  <div id="dropdownBasic1" class="form-control dropdown-btn" ngbDropdownToggle></div>
+                  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                    <button ngbDropdownItem>Karnataka</button>
+                    <button ngbDropdownItem>Alaska</button>
+                    <button ngbDropdownItem>California</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group d-flex" ngbDropdown >
+                  <input type="text" class="form-control" placeholder="Select Area">
+                  <!-- <select class="form-control">
+                    <option>Finance</option>
+                    <option>ITES/BPO</option>
+                    <option>Manufacturing</option>
+                  </select> -->
+                  <div id="dropdownBasic1" class="form-control dropdown-btn" ngbDropdownToggle></div>
+                  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                    <button ngbDropdownItem>Action - 1</button>
+                    <button ngbDropdownItem>Another Action</button>
+                    <button ngbDropdownItem>Something else is here</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="m-3 py-3 context">
+          <h6 class="col ft-14 page-heading">Product Context</h6>
+            <div class="row mx-0">
+              <div class="col-4 mb-3" *ngFor="let item of prodContext">
+                <div class="form-group d-flex" ngbDropdown >
+                  <input type="text" class="form-control" placeholder="Select Context">
+                  <!-- <select class="form-control">
+                    <option>Finance</option>
+                    <option>ITES/BPO</option>
+                    <option>Manufacturing</option>
+                  </select> -->
+                  <div id="dropdownBasic1" class="form-control dropdown-btn" ngbDropdownToggle></div>
+                  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                    <button ngbDropdownItem>Action - 1</button>
+                    <button ngbDropdownItem>Another Action</button>
+                    <button ngbDropdownItem>Something else is here</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary btn-lg" (click)="search()">Search</button>
+        </div>
+        <!-- <div class="col">
+          <button class="btn btn-primary btn-lg" (click)="addContext()"> + Add additional context</button>
+        </div> -->
+    </div>

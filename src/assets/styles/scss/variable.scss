@@ -1,0 +1,87 @@
+/*Bootstrap*/
+$theme-colors: (
+  "primary": #707070,
+  "light": #fff,
+  "secondary": #034d7b
+);
+
+$border-radius: 10px;
+
+// Primary font family
+$primaryFontFamily: "sans-serif", "Arial";
+$primaryfontfamilybold: "sans-serif Bold", "Arial";
+$secondaryFontFamily: "sans-serif Med", "Arial";
+$ternaryFontFamily: "sans-serif Medium";
+
+//Primary Colors
+$primaryMidnightBlue: #034d7b;
+$primaryOrange: #ff860d;
+$primaryWhite: #ffffff;
+$primaryBlack: #000000;
+$primaryGrey: #767676;
+$primaryHover: #d6d6d6;
+$primaryCardColor: #707070;
+$primaryBiege: #f5f5f5;
+$primaryYellow: #f8d648;
+$linkedinBtn: #0e76a8;
+$twitterBtn: #1da1f2;
+$primaryIconColor: #00000097;
+
+$backgroundBg: #66d9ff55 linear-gradient(0deg, #66d9ff55 0%, #66d9ff55 51%, #2b9fc555 100%);
+$backgroundBorder: 1px solid #66d9ff90;
+
+// //Secondary Colors
+// $secondaryYellow: #ffca00;
+// $secondaryGreen: #00b25e;
+// $secondaryScarlet: #ff2000;
+// $secondaryBeige2: #f7f5f7;
+// $secondaryGreyShade2: #d5ccd6;
+// $secondaryWhiteShade2 :#E3E6EA;
+// $secondaryGreenShade: #243228;
+// $secondaryGreyShade3: #78839c;
+// $primarySearchFor: #6a7b98;
+
+// //Font Colors
+// $primaryFontGreyShade4: #333333;
+// $primaryFontGreyShade5: #999999;
+// $primaryFontBlackShade1: #000000;
+// $primaryFontOrangeShade1: #fabf90;
+// $primaryFontOrangeShade2: #cd6800;
+// $secondaryFontOrange: #f47f64;
+// $secondaryFontOrange1: #deac47;
+
+// $primaryFontGreyShade6: #d7cfd8;
+// $primaryFontGreyShade7: #596479;
+// $primaryFontGreyShade8: #ccc;
+// $primaryFontRedShade1: #cd0000;
+// $primaryFontWhiteShade: #e9e5ea;
+// $primaryFontSeaGreenShade: #6bbd9e;
+// $infoColor: #607391;
+
+//Heading Sizes
+
+$primaryHeaderTop: 28px;
+$primaryInputLgSize: 24px;
+$inputSize: 22px;
+$secondaryHeadlinesSize: 20px;
+$primaryFontSize: 18px;
+$secondaryFontSize: 16px;
+$tertiaryFontSize: 14px;
+$smallFontSize: 12px;
+$tinyFontSize: 10px;
+
+//Font weights
+$fivehundred: 500;
+$threehundred: 300;
+$fourhundred: 400;
+$sixhundred: 600;
+
+// Border
+$inputBorder: 1px solid $primaryBiege;
+$cardBorder: 3px solid $primaryBiege;
+$borderHover: 3px solid $primaryOrange;
+
+// Box-Shadow
+
+$primaryBoxShadow: 0px 2px 4px #00000029;
+$secondaryBoxShadow: 0px 3px 6px #00000029;

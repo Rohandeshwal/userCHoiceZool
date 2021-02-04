@@ -1,0 +1,239 @@
+@import "../../../../assets/styles/scss/variable.scss";
+
+.cb-container{
+  margin-left: 300px;
+
+  .choiceboards{
+        width: 100%;
+        border-radius: 5px;
+        background: $primaryWhite;
+        box-shadow: $primaryBoxShadow;
+        transition-property: background-color;
+        transition-duration: 1s;
+
+        .border-box{
+          border: 1px solid $primaryHover;
+          border-radius: 5px;
+        }
+  }
+
+  .shared-cb-icon{
+    font-size: 20px;
+    color: $primaryBlack;
+  }
+}
+
+.card-layout{
+  position: relative;
+  i{
+    line-height: 2;
+    font-size: 45px;
+    color: #00000097;
+  }
+
+  img{
+    height: 60px;
+    width: 60px;
+  }
+
+  .quiz-type{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    img{
+      height: 15px;
+      width: 15px;
+    }
+  }
+}
+
+.hover-heading{
+  &:hover{
+    border-bottom: 3px solid $primaryMidnightBlue;
+  }
+}
+
+// .cb-dropdown, .shared-count{
+//   display: none;
+// }
+
+.card-checkbox{
+  position: relative;
+  // &:hover{
+    .cb-dropdown{
+      display: block;
+      // border-radius: 50%;
+      // border: 1px solid $primaryOrange;
+      position: absolute;
+      top: 0px;
+      right: -5px;
+      height: 15px;
+      width: 15px;
+
+      i{
+        font-size: 15px;
+      }
+    }
+
+    .dropdown-toggle::after{
+      display: none !important;
+    }
+    .shared-count{
+      display: block;
+      position: absolute;
+      right: 5px;
+      bottom: 3px;
+      font-size: 12px;
+      background: $primaryOrange;
+      border-radius: 10px;
+      color: $primaryWhite;
+      display: flex;
+      align-items: center;
+      height: 20px;
+    
+      i{
+        font-size: 12px;
+        color: $primaryWhite;
+      }
+
+      .shared-list{
+        display: none;
+      }
+
+      &:hover{
+
+        .shared-list{
+          display: block;
+          border: 1px solid $primaryHover;
+          color: $primaryWhite;
+          width: 150px;
+          background: $primaryBlack;
+          padding: 10px;
+          position: absolute;
+          left: 40px;
+          z-index: 9;
+        }
+      }
+    }
+  // }
+}
+
+
+.highlighted{
+  background-color: #ddd !important;
+}
+
+// .workspace-card {
+//   position: relative;
+//   height: 232px;
+//   width: 232px;
+//   border-radius: 10px;
+//   box-shadow: $secondaryBoxShadow;
+//   border: $cardBorder;
+//   background: $primaryWhite;
+//   cursor: pointer;
+
+//   .create-new {
+//     font-size: $tertiaryFontSize;
+//   }
+
+//   &:hover {
+//     border: $borderHover;
+//   }
+
+//   .menu-icon {
+//     position: absolute;
+//     top: 5px;
+//     right: 10px;
+//     z-index: 9;
+//     cursor: pointer;
+
+//     i {
+//       font-size: $secondaryHeadlinesSize;
+//       color: $primaryGrey;
+//       opacity: 0.7;
+//     }
+//   }
+
+//   .workspace-menu {
+//     background: $primaryBlack;
+//     opacity: 0.85;
+//     height: 222px;
+//     width: 222px;
+//     position: absolute;
+//     top: 2px;
+//     left: 2px;
+//     border-radius: 10px;
+//     color: $primaryWhite;
+
+//     .menu-list {
+//       list-style: none;
+//       text-align: left;
+//       padding: 15px;
+
+//       .menu-list-item {
+//         line-height: 2;
+//         cursor: pointer;
+//         padding: 0 15px;
+//         border-radius: 10px;
+//         display: flex;
+//         font-size: $tertiaryFontSize;
+//         img {
+//           margin-right: 10px;
+//         }
+
+//         &:hover,
+//         &:active {
+//           background: $primaryYellow;
+//           color: $primaryBlack;
+//           img {
+//             filter: invert(100%);
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   .workspace-name {
+//     height: 200px;
+//     font-size: $secondaryHeadlinesSize;
+//     font-weight: 600;
+//     padding: 20px;
+//     text-align: center;
+ 
+//   }
+
+//   .share-count {
+//     margin-top: -5px;
+//     font-size: $smallFontSize;
+//     i {
+//       font-size: $secondaryHeadlinesSize;
+//       margin-left: 10px;
+//     }
+//     img {
+//       margin-left: 7px;
+//     }
+//   }
+// }
+
+// .create-workspace-card {
+//   cursor: pointer;
+//   flex-direction: column;
+//   i {
+//     font-size: 64px;
+//   }
+// }
+
+// .create-new{
+//   flex-direction: column;
+//   border: none;
+//   &:hover{
+   
+//     background: $primaryOrange !important;
+//     color: $primaryWhite;
+//   }
+
+//   i {
+//     font-size:36px;
+//   }
+// }

@@ -1,0 +1,148 @@
+@import  '../../../../assets/styles/scss/variable.scss';
+.ws-container{
+    margin-left: 300px;
+    .shared-cb-icon{
+        font-size: 20px;
+        color: $primaryBlack;
+      }
+    .ws-content{
+        width: 100%;
+        background: $primaryWhite;
+        border-radius: 5px;
+        box-shadow: $primaryBoxShadow;
+        transition-duration: 1s;
+        transition-property: background-color;
+    
+        .workspace{
+            border-top: 1px solid $primaryCardColor;
+            cursor: pointer;
+    
+            .ws-icon{
+                i{
+                    color: $primaryIconColor;
+                    font-size: $primaryFontSize;
+                }
+                img{
+                  height: 35px;
+                  width: 35px;
+                }
+            }
+        }
+    }
+}
+
+
+// .choiceboards{
+//     width: 100%;
+//     border-radius: 5px;
+//     background: $primaryWhite;
+//     box-shadow: $primaryBoxShadow;
+//     transition-property: background-color;
+//     transition-duration: 1s;
+
+//     .border-box{
+//       border: 1px solid $primaryHover;
+//       border-radius: 5px;
+//     }
+// }
+
+.card-layout{
+    i{
+      line-height: 2;
+      font-size: 45px;
+      color: #00000097;
+    }
+  }
+
+.highlighted{
+    background-color: #ddd !important;
+}
+
+.dropdown-toggle::after{
+    display: none !important;
+  }
+
+
+
+// .workspace-card{
+//     position: relative;
+//     height: 232px;
+//     width: 232px;
+//     border-radius: 10px;
+//     box-shadow: $secondaryBoxShadow;
+//     border: $cardBorder;
+//     background: $primaryWhite; 
+//     cursor: pointer;
+
+//     &:hover{
+//         border: $borderHover;
+//     }
+
+//     .menu-icon{
+//         position: absolute;
+//         top: 5px;
+//         right: 10px;
+//         z-index: 9;
+//         cursor: pointer;
+        
+//         i{
+//             font-size: $secondaryHeadlinesSize;
+//             color: $primaryGrey;
+//             opacity: 0.7;
+//         }
+//     }
+
+//     .workspace-menu{
+//         background: $primaryBlack;
+//     opacity: 0.85;
+//     height: 222px;
+//     width: 222px;
+//     position: absolute;
+//     top: 2px;
+//     left: 2px;
+//     border-radius: 10px;
+//     color: $primaryWhite;
+
+//         .menu-list{
+//             list-style: none;
+//             text-align: left;
+//             padding: 15px;
+
+//             .menu-list-item{
+//                 line-height: 2;
+//                 cursor: pointer;
+//                 padding: 0 15px;
+//                 border-radius: 20px;
+//                 display: flex;
+//                 img {
+//                     margin-right: 10px;
+//                 }
+
+//                 &:hover,
+//                 &:active{
+//                     background: $primaryYellow;
+//                 }
+//             }
+//         }
+//     }
+
+//     .workspace-name{
+//         height: 200px;
+//     font-size: $secondaryHeadlinesSize;
+//     font-weight: 600;
+//     padding: 20px;
+//     text-align: center;
+//     }
+
+//     .share-count{
+//         i{
+//             font-size: $secondaryHeadlinesSize;
+//             margin-left: 10px;
+//         }
+//     }
+// }
+
+// .create-workspace-card{
+//     flex-direction: column;
+//     cursor: pointer;
+// }

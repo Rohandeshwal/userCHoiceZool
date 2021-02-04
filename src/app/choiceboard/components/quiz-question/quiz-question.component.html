@@ -1,0 +1,78 @@
+<div>
+    <h3 class="page-heading pb-3 bottom-border">Quiz Name</h3>
+    <div class="w-75 info-content">
+        <div class="py-3" *ngFor="let item of questionList, let i = index">
+            <!-- <form [formGroup]="quizForm"> -->
+                <div class="challenge-question p-3">
+                    <div class="challenge-heading pb-3">Question {{item.number}}</div>
+                    <div class="challenge-text">{{item.question}}</div>
+                    <!-- <div class="d-flex pt-3 pb-3 justify-content-between">
+
+                        <div class="w-25">
+                            <div *ngFor="let object of item.objects" class="d-flex align-items-center my-2">
+                                <input type="checkbox">
+                                <div class="mx-3">{{object.item}}</div>
+                            </div>
+                        </div>
+                        <div class="w-75">
+                            <div *ngFor="let ele of item.options, let j = index">
+                                <div class=" d-flex align-items-center my-2">
+                                    <input type="text" placeholder="Select Business Component" list="businessComp" class="form-control w-50">
+                                        <datalist id="businessComp">
+                                            <option *ngFor="let key of ele.businessComp">{{key.name}}</option>
+                                        </datalist>
+                                    <div class="d-flex align-items-center mx-3">
+                                        <div class="cursor-pointer" *ngIf="j>0" (click)="removeRow(i, j)">
+                                            <img src="./assets/images/icons-choiceboard/delete-blue.svg">
+                                        </div>
+                                        <button type="button" class="ml-3 add-button" (click)="addRow(i)" *ngIf="item.options.length - 1 === j">
+                                            <img src="./assets/images/icons-choiceboard/plus.svg">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="col-12">
+                        <div class="ans-box p-3" *ngIf="item.number === 1">
+                          <div class="row mx-0 mb-3" *ngFor="let ele of item.options, let j = index">
+                                <div class="d-flex align-items-center w-50" *ngFor="let key of ele.businessComp">
+                                    <input type="checkbox" value="{{item.value}}" name="{{item.value}}">
+                                    <div  class="ml-3">{{key.name}}</div>
+                                </div>
+                          </div>
+                        </div>
+                        <div class="ans-box p-3" *ngIf="item.number === 2">
+                            <div class="row mx-0 mb-3" *ngFor="let ele of item.options, let j = index">
+                                  <div class="d-flex align-items-center w-50" *ngFor="let key of ele.businessComp">
+                                      <input type="radio" value="{{item.value}}" name="name">
+                                      <div class="ml-3">{{key.name}}</div>
+                                  </div>
+                            </div>
+                          </div>
+
+                        <div class="d-flex ans-box p-3" *ngIf="item.number === 3">
+                            <div class="col-2 pl-0">
+                                <button class="btn btn-primary">Yes</button>
+                            </div>
+                            <div class="col-2">
+                                <button class="btn btn-outline-dark">No</button>
+                            </div>
+                        </div>
+                        <div class="ans-box p-3" *ngIf="item.number === 4">
+                          <div class="d-flex align-items-center mb-3" *ngFor="let items of matchColumns">
+                            <div class="col-3 pl-0">{{items.prompts}}</div>
+                            <div class="col-3">
+                                <select class="form-control"> 
+                                    <option class="d-none" selected>Choose a match</option>
+                                    <option *ngFor="let keys of items.answers">{{keys.value}}</option>
+                                </select>
+                            </div>  
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- </form> -->
+        </div>
+    </div>
+</div>

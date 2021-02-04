@@ -1,0 +1,16 @@
+@import "../../../../assets/styles/scss/variable.scss";
+.context-box{
+    box-shadow: $primaryBoxShadow;
+    background: #ececec;
+    border-radius: 5px;
+
+    .context{
+      box-shadow: $primaryBoxShadow;
+      background: #fff;
+      border-radius: 5px;
+    }
+
+    .dropdown-btn{
+      width: 40px;
+    }
+}

@@ -1,0 +1,27 @@
+@import "../../../../assets/styles/scss/variable.scss";
+
+.profile-img {
+  cursor: pointer;
+    .image {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .comment-name{
+        font-size: $tertiaryFontSize;
+        color: $primaryMidnightBlue;
+    }
+    
+    .comment{
+        font-size: $smallFontSize;
+        width: 80%;
+        background: #fff;
+        padding: 10px;
+        border-radius: 0px 10px 10px 10px;
+    }
+}
+

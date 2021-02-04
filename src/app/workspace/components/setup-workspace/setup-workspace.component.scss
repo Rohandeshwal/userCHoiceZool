@@ -1,0 +1,36 @@
+@import "../../../../assets/styles/scss/variable.scss";
+
+// .config-wrapper{
+
+//        .config-input{
+//         border-radius: 10px;
+//         height: 48px;
+//         box-shadow: $primaryBoxShadow;
+//         border: $inputBorder;
+//         padding: 0 15px;
+//         color: $primaryGrey;
+//        }
+// }
+
+.background-workspace {
+  overflow: auto;
+  .container{
+    width: 55%;
+
+    .context-box{
+      box-shadow: $primaryBoxShadow;
+      background: #ececec;
+      border-radius: 5px;
+
+      .context{
+        box-shadow: $primaryBoxShadow;
+        background: #fff;
+        border-radius: 5px;
+      }
+
+      .dropdown-btn{
+        width: 40px;
+      }
+    }
+  }
+}

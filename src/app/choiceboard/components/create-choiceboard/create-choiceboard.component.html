@@ -1,0 +1,65 @@
+<div class="create-choiceboard-wrapper">
+    <h3 class="page-heading">Create New Choiceboard</h3>
+    <div class="pt-4 form-group w-50 m-auto">
+        <input type="text" class="form-control" value="choiceBoardName" [(ngModel)]="choiceBoardName" placeholder="Enter Choiceboard name">
+    </div>
+    <div class="pt-4 form-group w-50 m-auto">
+       <textarea name="" cols="" id=""   cols="3" rows="3" class="form-control"  placeholder="Enter Descriptions here..."></textarea>
+      
+    </div>
+    <h5 class="page-heading py-5">Select a module </h5>
+    <div class="d-flex justify-content-between container pb-5">
+        <div class="d-flex module-list mx-5 justify-content-between" id="sessions">
+            <label *ngFor="let module of modules, let i = index" class="card-checkbox mx-3" id="{{module.moduleName}}" [ngClass]="{'disabled': i > 1}">
+                <input type="radio" value="{{module.moduleName}}" name="category" class="d-none" (input)="getModuleName($event.target.value)">
+                <div class="card-content">
+                    <div class="card-layout d-flex justify-content-center">
+                        <img src="{{appConfig.imgSrc.prototype}}/{{module.moduleIcon}}">
+                        <span class="info-icon d-flex">
+                            <i class="fa fa-registered" aria-hidden="true"></i>
+                            <img src="{{appConfig.imgSrc.generic}}/attachment.svg">
+                            <img src="{{appConfig.imgSrc.generic}}/info-icon.svg" (click)="openInfoModal(infoModal)">
+                        </span>
+                    </div>
+                    <div class="card-name mt-3">{{module.moduleName}}</div>
+
+                </div>
+            </label>
+        </div>
+        <button (click)="scrollSessions(-435, 0)" class='leftRs'>&lt;</button>
+        <button (click)="scrollSessions(435, 0)" class='rightRs'>&gt;</button>
+    </div>
+
+    <div class="text-center">
+        <button type="button" (click)="routeTo()" class="btn
+             btn-primary" [disabled]="!isChecked">CONTINUE</button>
+    </div>
+</div>
+
+
+<ng-template #infoModal let-modal>
+    <div class="modal-header">
+        <div class="card-content">
+            <div class="card-layout d-flex justify-content-center">
+                <img src="./assets/images/category-individual.svg">
+            </div>
+        </div>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <img aria-hidden="true" src="./assets/images/icons-choiceboard/cancel.svg">
+        </button>
+    </div>
+    <div class="modal-body">
+  
+        <div class="text-center">
+            <h3 class="page-heading">VALUE PROPOSITION</h3>
+            <div class="text-muted">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, diam nonumy eirmod tempor invidunt ut
+                labore et
+                dolore magna aliquyam erat, sed diam voluptua.
+            </div>
+            <div class="py-5">
+                <img src="./assets/images/video-img.png">
+            </div>
+        </div>
+    </div>
+  </ng-template>

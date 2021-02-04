@@ -1,0 +1,271 @@
+@import "./variable.scss";
+
+.user-form{
+  width: 24rem;
+}
+
+.page-heading {
+  color: $primaryBlack;
+  font-weight: 600;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+// /config-wrapper
+
+.config-wrapper {
+  height: 100%;
+  margin: 0 50px;
+}
+
+// Config Input
+.config-input {
+  border-radius: 10px;
+  height: 48px;
+  box-shadow: $primaryBoxShadow;
+  border: $inputBorder;
+  padding: 0 15px;
+  color: $primaryGrey;
+}
+
+// Card CSS
+
+.card-content {
+  min-width: 100px;
+  width: 100px;
+
+  .card-layout {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: $secondaryBoxShadow;
+    border: $inputBorder;
+    background: $primaryWhite;
+
+    .info-icon {
+      position: absolute;
+      bottom: 0;
+      img, i {
+        padding: 0 3px;
+      }
+    }
+  }
+
+  .card-layout > img{
+    width: 38px;
+  }
+}
+
+.card-name {
+  font-size: $smallFontSize;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+// Checkbox Css
+
+.card-checkbox {
+  cursor: pointer;
+  margin-bottom: 0 !important;
+  input:checked ~ .card-content {
+    .card-layout {
+      border: 2px solid $primaryOrange !important;
+    }
+  }
+  .card-content {
+    .card-layout{
+
+        &:hover {
+               border: 2px solid $primaryOrange !important;
+             }
+    }
+
+}
+}
+
+// Ellipsis White Icon
+
+.white-icon {
+  color: $primaryWhite !important;
+}
+
+// Quiz list and Case Study List CSS
+.bottom-border {
+  border-bottom: 1px solid $primaryMidnightBlue;
+}
+
+// List CSS
+
+.view-button {
+  float: right;
+  border: none !important;
+}
+
+//   Add-button CSS
+
+.add-button {
+  border-radius: 50%;
+  border: none;
+  font-size: 20px;
+  height: 30px;
+  width: 30px;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px #00000029;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Search Filter
+
+.filter {
+  position: relative;
+  width: 220px;
+   i, img {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: $primaryCardColor;
+  }
+}
+
+
+//  Workspace Home and CB dashboard Side bar css
+
+.side-bar{
+  position: fixed;
+  width: 300px;
+  .truncate{
+      cursor: pointer;
+      font-size: 1rem;
+      i{
+          width: 12px;
+          font-size: 16px;
+          color: $primaryIconColor;
+      }
+
+      &:hover{
+          background-color: $primaryHover;
+          border-radius: 5px;
+      }
+  }
+}
+// modal scss 
+.add-notes {
+  background: $primaryWhite;
+  padding: 0 20px;
+  border-radius: 8px;
+}
+
+.overflow-scroll{
+  height: 200px;
+  overflow: auto;
+}
+
+.notes-input{
+  border: $cardBorder;
+}
+
+.comments-list {
+  border-bottom: $cardBorder;
+
+  .comments{
+    width: 100%;
+    word-break: break-word;
+  }
+}
+
+
+
+.small-text {
+  text-align: left;
+  font-size: $smallFontSize;
+  color: $primaryCardColor;
+}
+
+
+
+.url-div {
+  position: relative;
+
+  img {
+    position: absolute;
+    left: 15px;
+    top: 30px;
+    height: 15px;
+  }
+}
+
+.doc-upload {
+  background: $primaryWhite;
+  padding: 0 15px;
+  height: 44px;
+  position: relative;
+  img {
+    height: 20px;
+    width: 20px;
+  }
+
+  i {
+    font-size: $secondaryHeadlinesSize;
+  }
+
+  .file-upload{
+    border-left: 1px solid #70707033; 
+    cursor: pointer;
+  }
+
+  input{
+    border: none;
+
+  }
+      ::placeholder{
+        color: #d6d6d6;
+      font-size: 14px;
+      }
+}
+
+
+
+.link-icon {
+  background: #ffffff;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  img {
+    height: 18px;
+  }
+}
+
+.url-name {
+  border: none;
+}
+
+.url-input {
+  height: 44px;
+  border: none;
+  box-shadow: $cardBorder;
+  border-radius: 5px;
+}
+
+.text-input {
+  height: 44px;
+  border: none;
+  box-shadow: $cardBorder;
+  border-radius: 5px;
+}
+
+.dropdown-menu{
+  button{
+    font-size: 12px;
+    &:hover{
+      background: $primaryHover;
+    }
+  }
+}
+
+

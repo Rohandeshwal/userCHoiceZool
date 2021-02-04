@@ -1,0 +1,21 @@
+@import "../../../../assets/styles/scss/variable.scss";
+
+.challenge-heading {
+  color: $primaryBlack;
+  font-weight: $sixhundred;
+}
+.challenge-text {
+  border: none !important;
+}
+
+.challenge-question {
+  box-shadow: $primaryBoxShadow;
+  border-radius: 5px;
+  background: $primaryWhite;
+}
+
+.challenge-note {
+  background: $backgroundBg !important;
+  border-radius: 5px;
+  border: $backgroundBorder;
+}

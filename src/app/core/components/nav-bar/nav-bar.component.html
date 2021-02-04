@@ -1,0 +1,18 @@
+<div class="side-nav-bar">
+        <div class="nav-content d-flex">
+            <div *ngFor="let item of navbarItems let i = index" class="nav-items d-flex align-items-center" [ngClass]="{'rightBorder': i == 2 || i == 5}"
+                (click)="openModal(item.navText, i, publish)" placement="bottom" ngbTooltip="Choiceboard - {{item.navText}}">
+                <div class="nav-icon">
+                    <i [ngClass]="item.navIcon"></i>
+                </div>
+                <!-- <div class="nav-text" id="collapseExample" [ngbCollapse]="isCollapsed">{{item.navText}}</div> -->
+            </div>
+        </div>
+</div>
+
+<ng-template #publish let-modal>
+  </ng-template>
+
+<ng-template #publishDetail let-modal>
+    
+</ng-template>

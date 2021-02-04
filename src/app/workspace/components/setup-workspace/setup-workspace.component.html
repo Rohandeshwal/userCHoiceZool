@@ -1,0 +1,250 @@
+<div class="h-100 background-workspace">
+  <div class="container">
+    <h2 class="page-heading  text-center pt-5">Set Up Your Workspace</h2>
+    <div class="p-4">
+      <form>
+        <div class="col form-group py-3 context-box">
+          <h5 class="ft-18 page-heading">Workspace Details</h5>
+          <div class="mb-4">
+            <input type="text" class="marb-10" placeholder="Workspace Name" class="form-control">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" placeholder=" Description" id="exampleFormControlTextarea1" rows="2"
+              col="2"></textarea>
+          </div>
+        </div>
+        <div class="context-box py-3">
+          <h5 class="col ft-18 page-heading">Workspace Context</h5>
+          <div class="col mb-4">
+            <small>The workspace context allows you to categorize your work based on the context for which you
+              are working to formulate a business strategy</small>
+          </div>
+          <div class="m-3 py-3 context">
+            <h6 class="col ft-14 page-heading">Industry and Sectors Context</h6>
+            <div class="row mx-0">
+              <div class="col-6 mb-3">
+                <!-- <div class="form-group d-flex" ngbDropdown >
+                  <input type="text" class="form-control" placeholder="Select Industry">
+                  <div id="dropdownBasic1" class="form-control dropdown-btn" ngbDropdownToggle></div>
+                  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                    <button ngbDropdownItem>IT</button>
+                    <button ngbDropdownItem>BPO</button>
+                    <button ngbDropdownItem>Manufacturing</button>
+                  </div>
+                </div> -->
+                <label class="ft-14">Industry</label>
+                <select class="form-control">
+                  <option class="d-none" selected>Please Select...</option>
+                    <option>Finance</option>
+                    <option>ITES/BPO</option>
+                    <option>Manufacturing</option>
+                </select>
+              </div>
+              <div class="col-6 mb-3">
+                <!-- <div class="form-group d-flex" ngbDropdown >
+                  <input type="text" class="form-control" placeholder="Select Sector">
+                  <div id="dropdownBasic1" class="form-control dropdown-btn" ngbDropdownToggle></div>
+                  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                    <button ngbDropdownItem>Govt.</button>
+                    <button ngbDropdownItem>Private</button>
+                    <button ngbDropdownItem>NGO</button>
+                  </div>
+                </div> -->
+                <label class="ft-14">Sector</label>
+                <select class="form-control">
+                  <option class="d-none" selected>Please Select...</option>
+                    <option>Govt.</option>
+                    <option>Private</option>
+                    <option>NGO</option>
+                  </select>
+              </div>
+              <div class="col-6 mb-3" *ngFor="let item of industryContext">
+                <label class="ft-14">{{item.context}}</label>
+                <input class="form-control" placeholder="Please Enter...">
+              </div>
+            </div>
+            <div class="col">
+              <button class="btn btn-primary btn-lg" (click)="addContext('industry')"> + Add Industry context</button>
+            </div>
+          </div>
+          <div class="m-3 py-3 context">
+            <h6 class="col ft-14 page-heading">Geography Context</h6>
+              <div class="row mx-0">
+                <div class="col-6 mb-3">
+                  <!-- <div class="form-group d-flex" ngbDropdown >
+                    <input type="text" class="form-control" placeholder="Select Country">
+                    <div id="dropdownBasic1" class="form-control dropdown-btn" ngbDropdownToggle></div>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                      <button ngbDropdownItem>India</button>
+                      <button ngbDropdownItem>United States</button>
+                      <button ngbDropdownItem>United Kingdom</button>
+                    </div>
+                  </div> -->
+                  <label class="ft-14">Country</label>
+                  <select class="form-control">
+                  <option class="d-none" selected>Please Select...</option>
+                    <option>India</option>
+                    <option>United States</option>
+                    <option>United Kingdom</option>
+                  </select>
+                </div>
+                <div class="col-6 mb-3">
+                  <!-- <div class="form-group d-flex" ngbDropdown >
+                    <input type="text" class="form-control" placeholder="Select Region">
+                    <div id="dropdownBasic1" class="form-control dropdown-btn" ngbDropdownToggle></div>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                      <button ngbDropdownItem>South Asia</button>
+                      <button ngbDropdownItem>Asia/Pacefic</button>
+                      <button ngbDropdownItem>Western Europe</button>
+                    </div>
+                  </div> -->
+                  <label class="ft-14">Region</label>
+                  <select class="form-control">
+                  <option class="d-none" selected>Please Select...</option>
+                    <option>South Asia</option>
+                    <option>Asia/Pacefic</option>
+                    <option>Western Europe</option>
+                  </select>
+                </div>
+                <div class="col-6 mb-3">
+                  <!-- <div class="form-group d-flex" ngbDropdown >
+                    <input type="text" class="form-control" placeholder="Select State">
+                    <div id="dropdownBasic1" class="form-control dropdown-btn" ngbDropdownToggle></div>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                      <button ngbDropdownItem>Karnataka</button>
+                      <button ngbDropdownItem>Alaska</button>
+                      <button ngbDropdownItem>California</button>
+                    </div>
+                  </div> -->
+                  <label class="ft-14">State</label>
+                  <select class="form-control">
+                  <option class="d-none" selected>Please Select...</option>
+                    <option>Karnataka</option>
+                    <option>Alaska</option>
+                    <option>California</option>
+                  </select>
+                </div>
+                <div class="col-6 mb-3">
+                  <!-- <div class="form-group d-flex" ngbDropdown >
+                    <input type="text" class="form-control" placeholder="Select Area">
+                    <div id="dropdownBasic1" class="form-control dropdown-btn" ngbDropdownToggle></div>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                      <button ngbDropdownItem>Action - 1</button>
+                      <button ngbDropdownItem>Another Action</button>
+                      <button ngbDropdownItem>Something else is here</button>
+                    </div>
+                  </div> -->
+                  <label class="ft-14">Area</label>
+                  <select class="form-control">
+                  <option class="d-none" selected>Please Select...</option>
+                    <option>World Trade Center</option>
+                    <option>HSR Layout</option>
+                    <option>Whitefield</option>
+                  </select>
+                </div>
+                <div class="col-6 mb-3" *ngFor="let item of geographyContext">
+                  <label class="ft-14">{{item.context}}</label>
+                  <input class="form-control" placeholder="Please Enter...">
+                </div>
+              </div>
+              <div class="col">
+                <button class="btn btn-primary btn-lg" (click)="addContext('geography')"> + Add Geography context</button>
+              </div>
+          </div>
+          <div class="m-3 py-3 context">
+            <h6 class="col ft-14 page-heading">Product Context</h6>
+              <div class="row mx-0">
+                <div class="col-4 mb-3">
+                  <label class="ft-14">Product Group*</label>
+                  <select class="form-control">
+                  <option class="d-none" selected>Please Select...</option>
+                    <option>Action 1</option>
+                    <option>Action 2</option>
+                    <option>Action 3</option>
+                  </select>
+                </div>
+                <div class="col-4 mb-3">
+                  <label class="ft-14">Product Name*</label>
+                  <select class="form-control">
+                  <option class="d-none" selected>Please Select...</option>
+                    <option>Action 1</option>
+                    <option>Action 2</option>
+                    <option>Action 3</option>
+                  </select>
+                </div>
+                <div class="col-4 mb-3">
+                  <label class="ft-14">Product Category*</label>
+                  <select class="form-control">
+                  <option class="d-none" selected>Please Select...</option>
+                    <option>Action 1</option>
+                    <option>Action 2</option>
+                    <option>Action 3</option>
+                  </select>
+                </div>
+                <div class="col-4 mb-3" *ngFor="let item of productContext">
+                  <label class="ft-14">{{item.context}}</label>
+                  <input class="form-control" placeholder="Please Enter...">
+                </div>
+              </div>
+              <div class="col">
+                <button class="btn btn-primary btn-lg" (click)="addContext('product')"> + Add Product context</button>
+              </div>
+          </div>
+          <div class="m-3 py-3 context">
+            <h6 class="col ft-14 page-heading">Brand Context</h6>
+              <div class="row mx-0">
+                <div class="col-6 mb-3">
+                  <label class="ft-14">Brand Group*</label>
+                  <select class="form-control">
+                  <option class="d-none" selected>Please Select...</option>
+                    <option>Action 1</option>
+                    <option>Action 2</option>
+                    <option>Action 3</option>
+                  </select>
+                </div>
+                <div class="col-6 mb-3">
+                  <label class="ft-14">Brand Name*</label>
+                  <select class="form-control">
+                  <option class="d-none" selected>Please Select...</option>
+                    <option>Action 1</option>
+                    <option>Action 2</option>
+                    <option>Action 3</option>
+                  </select>
+                </div>
+                <div class="col-6 mb-3" *ngFor="let item of brandContext">
+                  <label class="ft-14">{{item.context}}</label>
+                  <input class="form-control" placeholder="Please Enter...">
+                </div>
+              </div>
+              <div class="col">
+                <button class="btn btn-primary btn-lg" (click)="addContext('brand')"> + Add Brand context</button>
+              </div>
+          </div>
+          <div class="m-3 py-3 context" *ngIf="additionalContext.length > 0">
+            <h6 class="col ft-14 page-heading">Additional Context</h6>
+              <div class="row mx-0">
+                <div class="col-6 mb-3" *ngFor="let item of additionalContext">
+                  <label class="ft-14">{{item.context}}</label>
+                  <!-- <select class="form-control">
+                  <option class="d-none" selected>Please Select...</option>
+                    <option>Action 1</option>
+                    <option>Action 2</option>
+                    <option>Action 3</option>
+                  </select> -->
+                  <input type="text" placeholder="Please Enter..." class="form-control">
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <button class="btn btn-primary btn-lg" (click)="addContext('additional')"> + Add Additional context</button>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center mt-4">
+          <button type="submit" class="btn btn-light btn-lg mr-3" (click)="goToHome()">BACK</button>
+          <button type="submit" class="btn btn-primary btn-lg" (click)="goToHome()">CONTINUE</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

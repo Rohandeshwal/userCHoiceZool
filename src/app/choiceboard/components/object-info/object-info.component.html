@@ -1,0 +1,21 @@
+<div class="modal-header">
+    <div class="card-content">
+      <div class="card-layout d-flex justify-content-center">
+        <img src="{{appConfig.imgSrc.prototype}}/{{infoData.icon}}">
+      </div>
+    </div>
+    <button type="button" class="close" (click)="closeModal()">
+      <img aria-hidden="true" src="{{appConfig.imgSrc.generic}}/cancel.svg">
+    </button>
+  </div>
+  <div class="modal-body">
+
+    <div>
+      <h3 class="page-heading text-center">{{infoData.name}}</h3>
+      <div class="text-muted" [innerHTML]="infoData.info">
+      </div>
+      <div class="py-5 d-flex justify-content-center">
+        <img src="./assets/images/video-img.png">
+      </div>
+    </div>
+  </div>
